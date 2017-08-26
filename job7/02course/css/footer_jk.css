@@ -1,0 +1,243 @@
+ #footer {
+     min-width: 1000px;
+     border-top: 1px solid #e4e4e4;
+     background: #fff;
+ }
+ #footer div, #footer p, #footer dd, #footer dl, #footer dt {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+ }
+ #footer .jkinfor-block {
+     background: #fff;
+ }
+ #footer .jkinfor-block .jkinfor {
+     position: relative;
+     width: 1000px;
+     height: 215px;
+     /*设置外边距，让宽度1000px的块居中*/
+     margin: 0 auto;
+     border-bottom: 1px solid #f5f5f5;
+     /*左内边距224px，让快内文字右移224px，好给极客学院的logo空出一列的位置来*/
+     padding-left: 224px;
+     padding-top: 25px;
+     box-sizing: border-box;
+ }
+ /*利用绝对定位，极客学院的logo容器偏移到最左边*/
+ 
+ #footer .jkinfor-block .jkinfor .jk-logo {
+     position: absolute;
+     left: 0;
+     top: 25px;
+     display: inline-block;
+     width: 160px;
+ }
+ /*设置了容器之后，再设置img的大小及样式*/
+ 
+ #footer .jkinfor-block .jkinfor .jk-logo img {
+     width: 109px;
+     height: 40px;
+     display: block;
+ }
+ /*设置了容器之后，再设置img的下面的P字段的大小及样式*/
+ 
+ #footer .jkinfor-block .jkinfor .jk-logo p {
+     font-size: 12px;
+     color: #999;
+     margin-top: 20px;
+ }
+ /*在jkinfor余下的1000-224=776px宽度中，用做浮动的办法，设置给下面的四个dl宽为135×4=540px，再余下宽度给最右边div容器*/
+ 
+ #footer .jkinfor dl {
+     width: 135px;
+     color: #808080;
+     float: left;
+ }
+ /*就是设置一下dl中的dt的大小及行高*/
+ 
+ #footer .jkinfor dl dt {
+     font-size: 14px;
+     line-height: 30px;
+ }
+ /*就是设置一下dl中的dd的大小及行高*/
+ 
+ #footer .jkinfor dl dd {
+     font-size: 12px;
+     line-height: 30px;
+ }
+ /*就是设置一下dl中的dd中a标签的颜色*/
+ 
+ #footer .jkinfor dl dd a {
+     color: #999999;
+ }
+ /*设置最右边的服务热线、ios及安卓的logo、二维码下载等等*/
+ 
+ #footer .jk-down {
+     position: absolute;
+     right: 0;
+     top: 25px;
+     display: inline-block;
+     width: 175px;
+     text-align: left;
+ }
+ /*右边的服务热线字体大小*/
+ 
+ #footer .jk-down .hot-tel {
+     color: #808080;
+     font-size: 14px;
+     margin-bottom: 20px;
+ }
+ /*右边的二维码下载*/
+ 
+ #footer .jk-down .downCon {
+     position: relative;
+     display: inline-block;
+     width: 140px;
+     height: 30px;
+     border: 1px solid #eeeeee;
+     margin-bottom: 10px;
+     line-height: 30px;
+     color: #808080;
+     font-size: 13px;
+     padding-left: 40px;
+     cursor: pointer;
+ }
+ /*ios logo背景图及大小设置*/
+ 
+ #footer .jk-down .down-ios {
+     background: url(icon-down-ios.png)no-repeat 0 0;
+     background-size: 30px 30px;
+ }
+ /*二维码下载图片设置*/
+ 
+ #footer .jk-down .downCon img {
+     display: inline-block;
+     width: 115px;
+     height: 153px;
+     position: absolute;
+     top: -157px;
+     left: 12px;
+     z-index: 2;
+     display: none;
+ }
+ /*安卓 logo背景图及大小设置*/
+ 
+ #footer .jk-down .down-and {
+     background: url(icon-down-and.png)no-repeat 0 0;
+     background-size: 30px 30px;
+ }
+ /*备案等版权信息*/
+ 
+ #footer .copyright {
+     font-size: 12px;
+     color: #999;
+     margin: 0 auto;
+     width: 1000px;
+     text-align: center;
+     padding: 15px 0;
+ }
+ /*字体粗细*/
+ 
+ #footer .copyright strong {
+     font-weight: 400;
+ }
+ /*版权信息中字体颜色，999为灰色，FFFFFF应该为白色，000000黑色（什么都没有）*/
+ 
+ #footer .copyright a {
+     color: #999;
+ }
+ /*版权信息中微信下载logo*/
+ 
+ #footer .copyright a.down-wechat {
+     float: right;
+     height: 15px;
+     width: 20px;
+     background: url(icon-down-wechat.png)no-repeat 0 0;
+     background-size: 18px 15px;
+ }
+ /*版权信息中新浪下载logo*/
+ 
+ #footer .copyright a.down-sina {
+     float: right;
+     height: 15px;
+     width: 20px;
+     margin-right: 10px;
+     background: url(icon-down-sina.png)no-repeat 0 0;
+     background-size: 20px 15px;
+ }
+ /*gototop跳转快捷键*/
+ 
+ .gotop {
+     position: fixed;
+     left: 50%;
+     /*先知这里定位居中（fix与ab一样），然后再下面设外边距510px*/
+     margin-left: 510px;
+     bottom: 50px;
+     width: 34px;
+     /*不设置高度是等下用内容撑开吗*/
+     text-align: center;
+     z-index: 2000;
+ }
+ /*span标签样式*/
+ 
+ .gotop span {
+     cursor: pointer;
+ }
+ /*TOP图标*/
+ 
+ .gotop span.top {
+     display: block;
+     background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop.jpg) 0 0 no-repeat;
+     background-size: 34px 103px;
+     width: 34px;
+     height: 34px;
+ }
+ /*弹出的极客学院二维码，初始状态隐藏*/
+ 
+ .gotop span.erwma {
+     position: relative;
+     display: block;
+     background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop.jpg) 0 -34px no-repeat;
+     background-size: 34px 103px;
+     width: 34px;
+     height: 35px;
+ }
+ .gotop span.erwma img, .gotop span.jk-app img {
+     width: 126px;
+     height: 159px;
+     position: absolute;
+     z-index: 2100;
+     left: -126px;
+     top: -70px;
+     display: none;
+ }
+ /*中间第二个图标，app*/
+ 
+ .gotop span.jk-app {
+     position: relative;
+     display: block;
+     background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/phone-1.png) center center no-repeat;
+     background-size: 12px 24px;
+     width: 34px;
+     height: 35px;
+     border-bottom: 1px solid #e0e0e0;
+ }
+ .gotop span.jk-app:hover {
+     background: #f7f7f7 url(http://e.jikexueyuan.com/headerandfooter/images/phone-2.png) center center no-repeat;
+     background-size: 12px 24px;
+ }
+ /*jk-app:hover状态下控制appewm显示*/
+ 
+ .gotop span.jk-app:hover .appewm {
+     display: block;
+ }
+ /*底部的logo*/
+ 
+ .gotop a.diaocha {
+     display: block;
+     width: 34px;
+     height: 34px;
+ }

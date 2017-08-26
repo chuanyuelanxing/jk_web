@@ -1,0 +1,227 @@
+ body {
+        line-height: 1.5;
+        background: #f0f0f0;
+    }
+    /*瀑布流页头大的布局设置*/
+    
+    header {
+        position: relative;
+        z-index: 35;
+        background-color: #fff;
+        border-bottom: 1px solid #ebebeb;
+        box-shadow: 0 0 3px rgba(150, 150, 150, .2);
+        min-width: 1220px;
+        display: inline-block;
+        min-height: 90px;
+        width: 100%;
+        /*默认用页面整体宽度1536*/
+        padding-bottom: 8px;
+    }
+    /*百度页头右上角用户登录导航栏*/
+    
+    .user-info {
+        /*代码之道p85*/
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        z-index: 999;
+        text-align: right;
+        white-space: nowrap;
+        font: 12px Arial;
+        line-height: 20px;
+        width: 234px;
+        height: 20px;
+    }
+    
+    .user-info li {
+        float: left;
+        display: inline;
+    }
+    
+    .user-info a {
+        line-height: 20px;
+        font-family: 宋体;
+        color: rgb(85, 85, 85);
+        text-decoration: none;
+        text-align: center;
+        margin: 0px 7px;
+    }
+    
+    .user-info a:hover {
+        cursor: pointer;
+        /*一个小手图示*/
+    }
+    /*百度头部搜索栏主体*/
+    
+    .ser_tab {
+        /*这是对整体布局设置样式，对导航来说不是很重要*/
+        position: relative;
+        z-index: 6;
+        margin-left: 194px;
+        padding-top: 12px;
+        height: 30px;
+        line-height: 30px;
+        /*overflow: hidden;*/
+    }
+    
+    .ser_tab li {
+        float: left;
+        display: inline;
+        /*定位行元素，可以排列一行*/
+    }
+    
+    .ser_tab a {
+        color: #555;
+        margin-right: 17px;
+        font-size: 14px;
+        font-family: 'Microsoft YaHei', arial, 'Hiragino Sans GB', sans-serif;
+        text-decoration: none;
+        /*取消下划线*/
+    }
+    
+    .ser_tab .b {
+        /*显示图片栏选中状态*/
+        color: #333;
+        font-weight: 700;
+    }
+    /*百度搜索栏左边logo*/
+    
+    .ser_logo {
+        float: left;
+        position: relative;
+        top: -14px;
+        margin-left: 40px;
+        margin-right: 16px;
+    }
+    
+    .ser_logo img {
+        width: 137px;
+        height: 46px;
+    }
+    /*百度头部搜索栏搜索框*/
+    
+    .ser_nav {
+        position: relative;
+        float: left;
+        z-index: 7;
+        width: 585px;
+        /* background: aqua;*/
+    }
+    /*百度搜索框表单*/
+    
+    .ser_nav form {
+        position: relative;
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    .ser_nav form .s_ipt_wr {
+        /*嵌套这个span是为了分别放置input文本框及右边的图标*/
+        /*只能设置为行内块元素，设置行元素的话则不能设置宽高，设置块的话不就会独占整个div*/
+        display: inline-block;
+        width: 453px;
+        height: 32px;
+        border: 1px solid #b8b8b8;
+        border-right: 0;
+        vertical-align: top;
+        /*background: lightyellow;*/
+    }
+    
+    .ser_nav form .s_ipt_wr .s_ipt {
+        width: 416px;
+        height: 22px;
+        font: 16px/22px arial;
+        margin: 6px 0 0 7px;
+        /*上右下左*/
+        outline: 0;
+        background: #fff;
+    }
+    
+    form .s_ipt_wr input,
+    form .s_btn_wr input {
+        /*设置iput边框为0，其自带1.6px，让内容居中*/
+        padding: 0;
+        border: 0;
+        /*border:1px solid red;*/
+    }
+    /*baidu按钮*/
+    
+    .ser_nav form .s_btn_wr {
+        display: inline-block;
+        z-index: 0;
+        width: 98px;
+        height: 32px;
+        vertical-align: top;
+        border: 1px solid #ccc;
+        margin-left: -7px;
+    }
+    
+    .ser_nav form .s_btn_wr .s_btn {
+        width: 98px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+        font-family: "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+        color: rgb(51, 51, 51);
+        cursor: pointer;
+        padding: 1px 0px 0px;
+        background: url(../images/search_btn_af3bab1.png) 0px 0px no-repeat;
+        border-width: 0px;
+        border-style: initial;
+        border-color: initial;
+        border-image: initial;
+    }
+    
+    .ser_nav form .s_btn_wr:hover {
+        border-color: #ababab;
+    }
+    /*baidu照相机图标*/
+    
+    #sttb {
+        position: absolute;
+        z-index: 1;
+        top: 11px;
+        right: 131px;
+        display: block;
+        /* overflow: hidden;*/
+        width: 22px;
+        height: 17px;
+        line-height: 10em;
+        outline: 0;
+        _top: 11px;
+    }
+    
+    #sttb img {
+        position: relative;
+        display: block;
+        width: 18px;
+        height: 16px;
+    }
+    
+    a img {
+        border: 0;
+    }
+    /*瀑布流照片样式*/
+    
+    main {
+        position: relative;
+        left: 30px;
+    }
+    
+    .pin {
+        padding: 5px 0 0 15px;
+        float: left;
+    }
+    
+    .box {
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 6px #ccc;
+        border-radius: 5px;
+    }
+    
+    .box img {
+        width: 162px;
+        height: auto;
+        /*高度设置为自适应*/
+    }

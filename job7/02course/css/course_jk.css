@@ -1,0 +1,817 @@
+/*tagGather是右边main 第一层容器的类名*/
+/*tagGather内无hd内所以屏蔽*/
+/*.tagGather>.hd {
+    height: 34px;
+    padding: 2px 0;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 12px;
+    line-height: 30px
+}
+.tagGather>.hd h2 {
+    float: left;
+    font-size: 14px;
+    font-weight: 700
+}
+.tagGather>.hd h2 img {
+    height: 20px;
+    margin-right: 4px
+}
+.tagGather>.hd .hd-aside {
+    float: right
+}*/
+.tagGather>.bd {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5
+}
+/*.sort在mybse_jk.css文件中Line 1499，copy到此处方便单独提炼*/
+.sort {
+    position: relative;
+    z-index: 500
+}
+/*类sort下的包裹皮设置，盒子模型、行高、颜色等*/
+.sort>.wrap {
+    box-sizing: content-box;
+    height: 38px;
+    background: #fff;
+    color: gray;
+    line-height: 38px
+}
+/*sort下的导航栏这一大块设置*/
+.sort .sortMode {
+    overflow: visible;
+    float: left;
+    height: 38px
+}
+/*sort下的导航栏h3标题设置*/
+.sort .sortMode h3 {
+    float: left;
+    padding: 0 21px;
+    background: #fff;
+    border-right: 1px solid #f5f5f5;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default
+}
+/*.sort .sortMode h1 {
+    float: left;
+    padding: 0 18px;
+    background: #fff;
+    border-right: 1px solid #e4e4e4;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: default
+}*/
+.sort .sortMode>dl {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    float: left;
+    height: 36px;
+    margin: 0 1px 0 -1px;
+    /*white-space属性指定元素内的空白怎样处理,不换行*/
+    white-space: nowrap
+}
+.sort .sortMode dt {
+    padding: 0 18px;
+    cursor: default
+}
+.sort .sortMode dd {
+    position: relative;
+    z-index: 12;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .1s ease .1s;
+    -moz-transition: all .1s ease .1s;
+    -ms-transition: all .1s ease .1s;
+    transition: all .1s ease .1s
+}
+/*弹出菜单中a选项*/
+.sort .sortMode dd a {
+    display: block;
+    padding: 0 32px 0 17px;
+    font-weight: 500;
+    color: gray
+}
+
+/*dt标题右边的箭头样式*/
+.sort .sortMode dt>.arrow {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px
+}
+/*:before 选择器向选定的元素前插入内容，after反之*/
+.sort .sortMode dt>.arrow:after, .sort .sortMode dt>.arrow:before {
+    display: block;
+    width: 0!important;
+    height: 0!important;
+    padding: 0!important;
+    font-size: 0!important;
+    line-height: 0!important;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: gray;
+    content: " "
+}
+.sort .sortMode dt>.arrow:after {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    border-width: 4px;
+    border-bottom-width: 0;
+    border-top-color: #fff
+}
+/*弹出菜单，内容项待选状态*/
+.sort .sortMode dd a:hover {
+    color: #35B558
+}
+.sort .sortMode>dl:hover {
+    height: auto;
+    overflow: visible;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-width: 0 1px 1px;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .1)
+}
+.sort .sortMode>dl:hover dt {
+    padding: 0 17px
+}
+.sort .sortMode>dl:hover dt>.arrow {
+    visibility: hidden
+}
+.sort .sortMode>dl:hover dd {
+    visibility: visible;
+    opacity: 1
+}
+/*sort下面的课程显示样式切换设置右浮动，copy mybase_jk.css*/
+.sort .previewMode {
+    float: right
+}
+
+/*设置切换样式的li标签*/
+.previewMode li {
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 38px;
+    border-left: 1px solid #f5f5f5;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    transition: background-color .2s
+}
+/*两个logo的外层li标签被选中时候，颜色*/
+.previewMode li.curr, .previewMode li:hover {
+    background: #fff
+}
+/*嵌入的logo图标大小及设置*/
+.previewMode li .icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    background: url(preview-icon_2ae2eb9.png) no-repeat 0 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
+    .previewMode li .icon {
+        background-image: url(preview-icon-x2_03c235e.png);
+        background-size: 60px 14px
+    }
+}
+/*没有此项目，用不上*/
+.previewMode li a.lesson-map {
+    display: block
+}
+.previewMode li.kuai-icon .icon {
+    width: 14px;
+    background: url(icon-kuai_3c1a8cf.png) no-repeat 0 0;
+    background-size: 14px
+}
+.previewMode li.list-icon .icon {
+    width: 19px;
+    background: url(icon-list_6d9f87f.png) no-repeat center;
+    background-size: 16px 12px
+}
+/*是否用得上？*/
+.previewMode li.tree-icon .icon {
+    width: 19px;
+    background-position: -34px 0
+}
+.previewMode li.tree-icon:hover {
+    background: 0 0
+}
+.previewMode li.tree-icon a.lesson-map:hover {
+    background: #fff
+}
+.previewMode li .mod-tips {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-right: -42px;
+    white-space: nowrap;
+    color: #7c5900;
+    font-size: 12px;
+    cursor: default
+}
+.previewMode .mod-tips .arrow {
+    position: absolute;
+    top: 100%;
+    right: 55px;
+    margin-top: -1px;
+    display: inline-block
+}
+.previewMode .mod-tips .arrow:after, .previewMode .mod-tips .arrow:before {
+    display: block;
+    width: 0!important;
+    height: 0!important;
+    padding: 0!important;
+    font-size: 0!important;
+    line-height: 0!important;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #f1e5b3;
+    content: " "
+}
+.previewMode .mod-tips .arrow:after {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    border-width: 4px;
+    border-bottom-width: 0;
+    border-top-color: #fff9df
+}
+/*核心课程库组件设置，九宫格形式*/
+body {
+    background: #f5f5f5
+}
+#lesson-list {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: relative
+}
+#lesson-list .lesson-nav {
+    width: 210px;
+    padding-bottom: 0;
+    color: #000;
+    font-size: 12px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-top: 2px solid #35b558
+}
+#lesson-list .lesson-nav dt {
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 36px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #333;
+    line-height: 36px;
+    cursor: default
+}
+#lesson-list .lesson-nav dl {
+    margin-bottom: 20px
+}
+#lesson-list .lesson-nav dd {
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0 15px
+}
+#lesson-list .lesson-nav dl a:hover {
+    color: #35b558!important
+}
+#lesson-list .lesson-nav dl a {
+    color: #333;
+    width: 170px;
+    display: inline-block
+}
+#lesson-list .lesson-nav dl a.active {
+    color: #35b558
+}
+#lesson-list .lesson-nav dd span {
+    color: #999;
+    font-weight: 400
+}
+#lesson-list .lesson-nav dl.classify span:nth-child(1) {
+    padding-left: 0
+}
+#lesson-list .lesson-nav dl.classify span {
+    color: #333;
+    padding: 0 7px;
+    font-weight: 600
+}
+#lesson-list .listbox {
+    width: 766px;
+    float: right
+}
+#lesson-list .listbox .lessonlist-nav {
+    height: 42px;
+    border-bottom: 1px solid #f3f3f3;
+    line-height: 42px
+}
+#lesson-list .lessonlist-nav ul.time-hot {
+    width: 120px;
+    float: left
+}
+#lesson-list .lessonlist-nav ul.time-hot li {
+    width: 60px;
+    height: 42px;
+    text-align: center;
+    color: #333;
+    float: left;
+    font-size: 12px;
+    cursor: pointer
+}
+#lesson-list .lessonlist-nav ul.time-hot li a {
+    color: #333
+}
+#lesson-list .lessonlist-nav ul.time-hot li.nav_on {
+    border-bottom: 1px solid #35b558
+}
+#lesson-list .lessonlist-nav .change-type {
+    width: 350px;
+    height: 42px;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    text-align: right
+}
+#lesson-list .lessonlist-nav .change-type span {
+    padding: 0 5px
+}
+#lesson-list .listbox .classfiy-change {
+    width: 60px;
+    height: 24px;
+    padding-top: 10px;
+    float: right;
+    line-height: 42px;
+    margin-left: 50px
+}
+#lesson-list .listbox .classfiy-change li {
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    background: url(listype-icon_c7585b8.png) 0 -26px no-repeat;
+    line-height: 24px;
+    float: left;
+    display: block
+}
+#lesson-list .classfiy-change li.list-icon {
+    background-position: -30px -26px
+}
+.lesson-flex {
+    position: fixed!important;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 300
+}
+/*已经设置Ul为块级元素，因为浮动了，所以宽度大于776*/
+.lesson-list ul {
+    width: 790px;
+    margin-top: 15px
+}
+/*左浮动、依次排列*/
+.lesson-list ul li {
+    width: 250px;
+    height: 225px;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 13px
+}
+/*定义上部分的容器，高度及定位方式*/
+.lesson-list .lessonimg-box {
+    width: 100%;
+    height: 135px;
+    position: relative
+}
+
+/*课程图片左上角的收藏标志等logo*/
+.lesson-list .lesson-shoucang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-1_76dc56f.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer
+}
+.lesson-list .lesson-shoucang:hover {
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-2_3d597dc.png);
+    background-size: 16px 16px
+}
+.lesson-list .ysc {
+    background: url(http://s1.jikexueyuan.com/common/images/shoucang-3_3111bf6.png);
+    background-size: 16px 16px
+}
+
+/*课程2的收藏标志*/
+.lesson-list2 .lesson-shoucang {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(http://s1.jikexueyuan.com/course/images/shoucang-1_76dc56f.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.lesson-list2 .lesson-shoucang:hover {
+    background: url(http://s1.jikexueyuan.com/course/images/shoucang-2_3d597dc.png);
+    background-size: 16px 16px;
+}
+
+
+/*定义上部分的容器照片宽度*/
+.lesson-list .lessonimg-box .lessonimg {
+    width: 100%;
+    height: 135px
+}
+/*设置viplogo标志*/
+.lesson-list .lessonimg-box .vip-icon, .lesson-list2 .lessonimg-box .vip-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(tag_vip_4d846c2.png) 0 0 no-repeat;
+    background-size: 100% 100%
+}
+/*认证logo标志*/
+.lesson-list .lessonimg-box .rz-icon, .lesson-list2 .lessonimg-box .rz-icon {
+    height: 22px;
+    width: 61px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(tag_rz_5a84337.png) 0 0 no-repeat;
+    background-size: 100% 100%
+}
+/*各种标志logo的雪碧图*/
+.lesson-list .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(icon_7f8b929.png) -58px -43px no-repeat
+}
+.right-45 {
+    right: 45px!important
+}
+.lesson-list .lessonimg-box .hot-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    z-index: 21;
+    background: url(http://s1.jikexueyuan.com/common/images/icon_7f8b929.png) -58px -70px no-repeat
+}
+
+/*这个是课程组件上部分中a标签内嵌套的img下面的嵌套的div样式，.playericon是div嵌套的i标签样式*/
+/*这个面纱控制容器，平时透明*/
+.lesson-list .lessonplay {
+    background: #000;
+    background: rgba(0, 0, 0, .4);/*这个颜色，类似面纱覆盖着图片上，有左道右滑动，直至覆盖到100%，初始透明状态，最终不透明*/
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0
+}
+/*覆盖着图片上的放映logo标志，叠加在lessonplay上面*/
+
+.lesson-list .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(player_icon_5c67475.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px
+}
+
+/*lesson-list中box下面的整体的信息介绍部分容器*/
+.lesson-list .lesson-infor {
+    padding: 10px;
+    position: relative;
+    z-index: 200;
+    height: 88px;
+    overflow: hidden;
+    background: #fff
+}
+.lesson-list .lesson-infor .lesson-info-h2, .lesson-list .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden
+}
+.lesson-list .lesson-infor .lesson-info-h2 a, .lesson-list .lesson-infor .lesson-info-h2 a:hover, .lesson-list .lesson-infor h5 a, .lesson-list .lesson-infor h5 a:hover {
+    color: #333
+}
+.lesson-list .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    display: none
+}
+.lesson-list .lesson-infor .timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative
+}
+.lesson-list .lesson-infor .timeandicon dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap
+}
+.lesson-list .lesson-infor .timeandicon dl dd {
+    font-size: 12px
+}
+.lesson-list .lesson-infor .timeandicon .time-icon {
+    background: url(clok_a413ecf.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px
+}
+.lesson-list .lesson-infor .timeandicon .learn-number {
+    float: right;
+    display: none
+}
+.lesson-list .lesson-infor .zhongji {
+    display: none
+}
+.mar-b8 {
+    margin-bottom: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon {
+    background: url(one-ji_1731712.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon2 {
+    background: url(tow-ji_ec2b553.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-infor .timeandicon .xinhao-icon3 {
+    background: url(three-ji_b588ab1.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.lesson-list .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: 4px
+}
+.lesson-list .lesson-infor .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px
+}
+.lesson-list .lesson-infor .lessonicon-box a img {
+    display: block;
+    width: 16px;
+    height: 16px
+}
+
+
+/*核心课程组件底部：学习课时及右边云标签样式*/
+.timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative
+}
+.timeandicon dl dd {
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px
+}
+.timeandicon .time-icon {
+    background: url(icon_7f8b929.png) 0 -72px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.timeandicon .learn-number {
+    float: right
+}
+.timeandicon .xinhao-icon {
+    background: url(icon_7f8b929.png) 0 -56px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+/*.lesson-list2 列表布局样式设置*/
+.lesson-list2 .lesson-infor .ask-text p {
+    padding: 0!important;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #333;
+    outline: 0;
+    word-wrap: break-word
+}
+
+.lesson-list2 ul li {
+    height: 100px;
+    padding: 0;
+    background-color: #fff;
+    margin-top: 13px
+}
+.lesson-list2 .lessonimg-box {
+    width: 185px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+    position: relative
+}
+.lessonimg-box .cancel-favorites {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 300
+}
+.lesson-list2 .lessonimg-box .lessonimg {
+    width: 185px;
+    height: 100px
+}
+.lesson-list2 .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(icon_7f8b929.png) -58px -43px no-repeat
+}
+.lesson-list2 .lessonimg-box .hot-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 13px;
+    z-index: 21;
+    background: url(icon_7f8b929.png) -58px -70px no-repeat
+}
+.lesson-list2 .lesson-infor {
+    position: relative;
+    height: 100px;
+    width: 566px;
+    float: left
+}
+.lesson-list2 .lesson-infor .lesson-info-h2, .lesson-list2 .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden
+}
+.lesson-list2 .lesson-infor .lesson-info-h2 a, .lesson-list2 .lesson-infor h5 a {
+    color: #333
+}
+.lesson-list2 .lesson-infor .lesson-info-h2 a:hover, .lesson-list2 .lesson-infor h5 a:hover {
+    color: #35b558
+}
+.lesson-list2 .lesson-infor p {
+    color: gray;
+    font-size: 12px;
+    opacity: 1!important;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+.timeandicon {
+    font-size: 12px;
+    color: gray;
+    position: relative
+}
+.timeandicon dl dd {
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+    margin-right: 15px
+}
+.timeandicon .time-icon {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -72px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+}
+.timeandicon .learn-number {
+    float: right
+}
+.timeandicon .xinhao-icon {
+    background: url(http://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -56px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px
+} 
+.lesson-list2 .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -75px
+}
+.lesson-list2 .lesson-infor .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    background-size: 16px 16px;
+    -webkit-background-size: 16px 16px
+}
+.lesson-list2 .lesson-infor .lessonicon-box a.android {
+    background: url(icon_7f8b929.png) 0 -88px no-repeat
+}
+.lesson-list2 .lesson-infor .lessonicon-box a.ios {
+    background: url(icon_7f8b929.png) 0 -106px no-repeat
+}
+.lesson-list2 .lessonplay {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0
+}
+.lesson-list2 .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(player_icon_5c67475.png) no-repeat;
+    background-size: 50px 50px;
+    cursor: pointer
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度图片瀑布流</title>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/myBase.css">
+    <link rel="stylesheet" type="text/css" href="css/mywaller.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- 百度页头右上角用户登录导航栏 -->
+            <div class="user-info">
+                <ul>
+                    <li><a href="#">传统翻页版本</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">百度首页</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">登录</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+            <!-- 百度页头右上角用户登录导航栏结束 -->
+            <!-- 百度搜索栏主体顶部导航部分 -->
+            <div class="ser_tab">
+                <ul>
+                    <li><a href="#">新闻</a></li>
+                    <li><a href="#">网页</a></li>
+                    <li><a href="#">贴吧</a></li>
+                    <li><a href="#">知道</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#" class="b">图片</a></li>
+                    <li><a href="#">视频</a></li>
+                    <li><a href="#">地图</a></li>
+                    <li><a href="#">百科</a></li>
+                    <li><a href="#">文库</a></li>
+                </ul>
+            </div>
+            <!-- 百度搜索栏主体顶部导航部分结束 -->
+            <!-- 百度搜索栏左边logo -->
+            <div class="ser_logo">
+                <a href="#">
+                    <img src="images/imglogo-r.png" alt="到 百度图片首页 来" title="返回 百度图片首页">
+                </a>
+            </div>
+            <!-- 百度搜索栏左边logo结束 -->
+            <!-- 百度头部搜索栏搜索框 -->
+            <div class="ser_nav">
+                <!-- 百度搜索框表单 -->
+                <form action="http://image.baidu.com">
+                    <span class="s_ipt_wr">
+                   <input id="kw" name="word" value="风景" class="s_ipt" autocomplete="off">
+                   <a class="sttb" hidefocus="true" id="sttb" title="上传图片，搜索相关信息" style="visibility: visible;"> 
+                   <img class="st_camera" src="images/camera_b659d28.png" width="21" height="20">
+                   </a>
+                   </span>
+                    <span class="s_btn_wr">
+                     <input type="submit" class="s_btn" value="百度一下">
+                    </span>
+                </form>
+                <!-- 百度搜索框表单结束 -->
+                <!-- baidu搜索框照相机图标 -->
+                <div class="ser_img">
+                </div>
+                <!-- baidu搜索框照相机图标结束部分 -->
+            </div>
+            <!-- 百度头部搜索栏主体结束 -->
+        </header>
+        <!-- 瀑布流展示页面 -->
+        <main>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/1.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/2.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/3.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/4.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/5.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/6.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/7.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/8.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/9.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/10.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/11.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/12.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/13.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/14.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/15.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/16.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/17.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/18.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/19.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/20.jpg" />
+                </div>
+            </div>
+            <div class="pin">
+                <div class="box">
+                    <img src="./images/21.jpg" />
+                </div>
+            </div>
+        </main>
+        <!-- 瀑布流展示页面结束-->
+    </div>
+    <script type="text/javascript" src="js/mywaller.js">   
+    </script>
+</body>
+
+</html>

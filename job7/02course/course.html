@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院课程库</title>
+    <link rel="stylesheet" type="text/css" href="css/mybase_jk.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/common_sync0_libs_4f30de2.css">
+    <link rel="stylesheet" type="text/css" href="css/common_sync1_libs_4637308.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/header_jk.css">
+    <link rel="stylesheet" type="text/css" href="css/cleft_jk.css">
+    <link rel="stylesheet" type="text/css" href="css/course_jk.css">
+    <link rel="stylesheet" type="text/css" href="css/footer_jk.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+</head>
+
+<body>
+    <!-- 页面布局由四块div叠加：header、pager、footer、gotop -->
+    <div class="wrapper">
+        <!-- 头部 -->
+        <div id="header">
+            <div class="w-1000 relative">
+                <!-- 头部有四块构成：logo、导航栏、右边登录区、搜索栏 -->
+                <a href="#" class="logo"><img src="./img/logo.png" height="40" width="109"></a>
+                <!--nav-->
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="#">首页</a></li>
+                        <li>职业学院<i class="arrow-icon"></i>
+                            <!-- 职业学院下拉菜单 -->
+                            <div class="submenu school-list">
+                                <h3>前端学院</h3>
+                                <a href="#"><i class="web-icon"></i>Web 前端工程师</a>
+                                <h3>后端学院</h3>
+                                <a href="#"><i class="python-icon"></i>Python Web工程师</a>
+                                <a href="#"><i class="go-icon"></i>Go语言工程师</a>
+                                <h3>移动学院</h3>
+                                <a href="#"><i class="ios-icon"></i>iOS工程师</a>
+                            </div>
+                        </li>
+                        <li style="color: rgb(53, 181, 88);">会员课程
+                            <i class="arrow-icon" style="border-color: rgb(53, 181, 88);"></i>
+                            <!-- 会员课程下拉菜单 -->
+                            <div class="submenu vip-lesson">
+                                <a href="#"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                                <a href="#"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                                <a href="#"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                                <a href="#"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                                <a href="#"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                                <a href="#"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+                            </div>
+                        </li>
+                        <li>极客社区<i class="arrow-icon"></i>
+                            <!-- 极客社区下拉菜单 -->
+                            <div class="submenu vip-lesson">
+                                <a href="#"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                                <a href="#"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                                <a href="#"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                                <a href="#"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!--nav end-->
+                <!--login-->
+                <div class="icon-box">
+                    <span class="search-icon" id="search-btn"></span>
+                    <span class="app-icon loginlist relative" id="appicon">
+					  <div class="submenu">
+						<i class="top-icon"></i>
+						<img src="./img/heade-rwm.png">
+					  </div>
+				    </span>
+                    <span class="relative loginlist logged" id="loginlist">
+                      <a href="#"><img src="./img/default.gif" id="userpoto"></a>
+                      <i id="uservip-icon" class="year-icon"></i>
+                      <!-- dl类似ul，申明一个列表项，里面的dt和dd与li相似。不过dt是上级，dd是下级；dt类似表头，dd类似表身；dt若是一级菜单，dd就是二级菜单。若是用dl家族系列，明显它在语义上更为直观，更符合要求，另外结构也更清晰 -->
+                         <dl class="submenu">
+                        <i class="top-icon"></i>
+                           <dd id="getUserLevel">
+                           <a href="#" class="rz-vip"></a>
+                           <a href="#" class="year-vip"></a>
+                           </dd>
+                           <dd><a href="#"><i class="xxzx-icon"></i>学习中心</a></dd>
+                           <dd><a href="#"><i class="grzy-icon"></i>个人主页</a></dd>
+                           <dd><a href="#"><i class="xxtz-icon"></i>消息通知<em class="unread-num"></em></a></dd>
+                           <dd><a href="#"><i class="zhsz-icon"></i>账号设置</a></dd>
+                           <dd><a href="#"><i class="tc-icon"></i>退出登录</a></dd>
+                        </dl>
+                    </span>
+                </div>
+                <!--login-->
+                <!--searchbox：js弹出的搜索框，默认不显示-->
+                <div class="searchbox" id="searchbox">
+                    <i class="close-icon" id="close-btn"></i>
+                    <i class="search-icon" id="search-btn"></i>
+                    <input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+                    <!-- 三个标签 -->
+                    <div class="tagbox">
+                        <a href="#">Android</a>
+                        <a href="#">iOS</a>
+                        <a href="#">HTML5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部结束 -->
+        <!-- 主体部分 -->
+        <div id="pager">
+            <div id="container">
+                <!-- crumbs：面包屑，这个DIV层平时不可见，必须点击了list-show菜单，才会显示出来-->
+                <div class="wrap w-1000 mar-t20">
+                    <!-- 右边主体部分，右浮动 -->
+                    <div id="main" class="f_r">
+                        <div class="tagGather">
+                            <div class="bd">
+                                <!-- listbox在tagGather下没有单独设置一个类 -->
+                                <div class="listbox">
+                                    <!-- listbox由三大块组成：第一行的sort、核心课程块、下面的导航栏 -->
+                                    <!-- sort:右边栏第一行的课程类型、内容、难度等导航栏 -->
+                                    <div class="sort">
+                                        <!-- 类sort下的包裹皮设置，盒子模型、行高、颜色等 -->
+                                        <div class="wrap">
+                                            <!-- sort下的导航栏这一大块设置 -->
+                                            <div class="sortMode">
+                                                <h3>全部课程</h3>
+                                                <dl>
+                                                    <dt>
+                                                        <span class="type-title-one">最新</span>
+                                                        <i class="arrow"></i>
+                                                    </dt>
+                                                    <dd>
+                                                        <!-- 无lesson-new类、lesson-detailed、lesson-all、level-one等类设置 -->
+                                                        <p class="lesson-new">
+                                                            <a href="#" ref="nofollow">最新</a>
+                                                        </p>
+                                                        <p class="lesson-new">
+                                                            <a href="#" ref="nofollow">最热</a>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                                <!-- new课程类型 -->
+                                                <dl>
+                                                    <dt><span class="type-title-tow">课程类型</span><i class="arrow"></i></dt>
+                                                    <dd>
+                                                        <p class="lesson-detailed">
+                                                            <a href="#" ref="nofollow">VIP</a>
+                                                        </p>
+                                                        <p class="lesson-detailed">
+                                                            <a href="#" ref="nofollow">免费</a>
+                                                        </p>
+                                                        <p class="lesson-detailed">
+                                                            <a href="#" ref="nofollow">认证专享</a>
+                                                        </p>
+                                                        <p class="lesson-all">
+                                                            <a href="#" ref="nofollow">全部</a>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                                <!-- /new课程类型 -->
+                                                <dl>
+                                                    <dt><span class="type-title-tow">内容类型</span><i class="arrow"></i></dt>
+                                                    <dd>
+                                                        <p class="lesson-detailed">
+                                                            <a href="#" ref="nofollow">知识精讲</a>
+                                                        </p>
+                                                        <p class="lesson-detailed">
+                                                            <a href="#" ref="nofollow">项目实战</a>
+                                                        </p>
+                                                        <p class="lesson-all">
+                                                            <a href="#" ref="nofollow">全部</a>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><span class="type-title-three">难度等级</span><i class="arrow"></i></dt>
+                                                    <dd>
+                                                        <p class="level-one">
+                                                            <a href="#" ref="nofollow">初级</a>
+                                                        </p>
+                                                        <p class="level-one">
+                                                            <a href="#" ref="nofollow">中级</a>
+                                                        </p>
+                                                        <p class="level-one">
+                                                            <a href="#" ref="nofollow">高级</a>
+                                                        </p>
+                                                        <p class="level-all">
+                                                            <a href="#" ref="nofollow"> 全部 </a>
+                                                        </p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <!-- sort下面的课程显示样式切换设置 -->
+                                            <div class="previewMode">
+                                                <ul>
+                                                    <li class="kuai-icon" id="kuai-icon"><i class="icon"></i>
+                                                    </li>
+                                                    <li class="list-icon curr" id="list-icon"><i class="icon"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sort end -->
+                                    <!-- 核心课程块 -->
+                                    <div class="lesson-list" id="changeid" style="">
+                                        <ul class="cf" style="display: block;">
+                                            <!--list-->
+                                            <li id="3142" test="0" deg="0" stop="1">
+                                                <!-- lessonimg-box在图表项则在上面，在切换后列表项目的左边部分 -->
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3142&amp;posColumn=3142.1">        	
+                                                    </i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3142&amp;posColumn=3142.1">
+                                                        <img src="./img/581ae2cb75899.jpg" class="lessonimg" title="腾讯大咖分享 - 腾讯大咖分享之技术交流" alt="腾讯大咖分享 - 腾讯大咖分享之技术交流">
+                                                        <!-- 这个面纱控制容器，平时透明，触发后类似面纱覆盖 -->
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <!-- 覆盖着图片上的放映logo标志，叠加在lessonplay上面 -->
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3142&amp;posColumn=3142.1"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- lesson-infor在图表项则在下面，在切换后列表项目的右边部分 -->
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2">
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3142&amp;posColumn=3142.1">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程主要是腾讯大咖与大家分享一些技术经验与心得。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>6课时122分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display:none;">
+                                                                    <i class="xinhao-icon3"></i><em>高级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2280人学习</em>
+                                                        </div>
+                                                        <!-- 右下角云logo -->
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box" style="bottom: 4px;">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3142&amp;posColumn=3142.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3141" test="0" deg="0" stop="1">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3141&amp;posColumn=3141.2"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3141&amp;posColumn=3141.2">
+                                                        <img src="./img/581ae23c05942.jpg" class="lessonimg" title="腾讯大咖分享 - 腾讯大咖分享之创业心经" alt="腾讯大咖分享 - 腾讯大咖分享之创业心经">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3141&amp;posColumn=3141.2"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3141&amp;posColumn=3141.2">腾讯大咖分享 - 腾讯大咖分享之创业心经</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程主要是由腾讯大咖为大家分享创业心经。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>7课时93分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon3"></i><em>高级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2183人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box" style="bottom: 4px;">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3141&amp;posColumn=3141.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3140" test="0" deg="0" stop="1">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3140&amp;posColumn=3140.3"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3140&amp;posColumn=3140.3">
+                                                        <img src="./img/581ae08717ebb.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云通信" alt="腾讯云产品 - 腾讯云通信">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3140&amp;posColumn=3140.3"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3140&amp;posColumn=3140.3">腾讯云产品 - 腾讯云通信</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程通过实操演示，教大家快速完成SDK集成。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>10课时81分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2082人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box" style="bottom: 4px;">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3140&amp;posColumn=3140.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3139" test="0" deg="0">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3139&amp;posColumn=3139.4"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3139&amp;posColumn=3139.4">
+                                                        <img src="./img/581ae02862bbb.jpg" class="lessonimg" title="腾讯云产品 - 腾讯视频云之互动直播" alt="腾讯云产品 - 腾讯视频云之互动直播">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3139&amp;posColumn=3139.4"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3139&amp;posColumn=3139.4">腾讯云产品 - 腾讯视频云之互动直播</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程主要为大家讲解SDK集成，iOS集成。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>10课时106分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2137人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3139&amp;posColumn=3139.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3138" test="0" deg="0">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3138&amp;posColumn=3138.5"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3138&amp;posColumn=3138.5">
+                                                        <img src="./img/581adfcc3f8cd.jpg" class="lessonimg" title="腾讯云产品 - 腾讯视频云之直播LVB" alt="腾讯云产品 - 腾讯视频云之直播LVB">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3138&amp;posColumn=3138.5"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3138&amp;posColumn=3138.5">腾讯云产品 - 腾讯视频云之直播LVB</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程手把手教大家快速调用相关SDK。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>4课时85分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2071人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3138&amp;posColumn=3138.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3137" test="0" deg="0" stop="1">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3137&amp;posColumn=3137.6"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3137&amp;posColumn=3137.6">
+                                                        <img src="./img/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB" alt="腾讯云产品 - 腾讯云数据库CDB">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3137&amp;posColumn=3137.6"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3137&amp;posColumn=3137.6">腾讯云产品 - 腾讯云数据库CDB</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程主要为大家介绍云数据库的使用入门。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>1课时9分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2117人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box" style="bottom: 4px;">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3137&amp;posColumn=3137.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3136" test="0" deg="0">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3136&amp;posColumn=3136.7"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3136&amp;posColumn=3136.7">
+                                                        <img src="./img/581adeedb2476.jpg" class="lessonimg" title="腾讯云产品 - 在云上搭建自己的Discuz论坛" alt="腾讯云产品 - 在云上搭建自己的Discuz论坛">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3136&amp;posColumn=3136.7"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3136&amp;posColumn=3136.7">腾讯云产品 - 在云上搭建自己的Discuz论坛</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程通过实操演示，教大家快速掌握云服务器的使用方法。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>4课时19分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2142人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3136&amp;posColumn=3136.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3135" test="0" deg="0">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3135&amp;posColumn=3135.8"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3135&amp;posColumn=3135.8">
+                                                        <img src="./img/581ade4c061e6.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云云服务器" alt="腾讯云产品 - 腾讯云云服务器">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3135&amp;posColumn=3135.8"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3135&amp;posColumn=3135.8">腾讯云产品 - 腾讯云云服务器</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程主要为大家介绍如何使用Windows系统及Linux系统云服务器。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>3课时13分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2105人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3135&amp;posColumn=3135.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="3097" test="0" deg="0" stop="1">
+                                                <div class="lessonimg-box">
+                                                    <i class="user-action lesson-shoucang " style="display: none;" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3097&amp;posColumn=3097.9"></i>
+                                                    <a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3097&amp;posColumn=3097.9">
+                                                        <img src="./img/581addc776da0.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云内容分发网络CDN" alt="腾讯云产品 - 腾讯云内容分发网络CDN">
+                                                        <div class="lessonplay" style="opacity: 0;">
+                                                            <i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3097&amp;posColumn=3097.9"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-infor" style="height: 88px;">
+                                                    <h2 class="lesson-info-h2"><a href="#" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3097&amp;posColumn=3097.9">腾讯云产品 - 腾讯云内容分发网络CDN</a></h2>
+                                                    <p style="height: 0px; opacity: 0; display: none;">
+                                                        本课程通过产品介绍、应用场景介绍等，手把手教你快速入门。
+                                                    </p>
+                                                    <div class="timeandicon">
+                                                        <div class="cf">
+                                                            <dl>
+                                                                <dd class="mar-b8"><i class="time-icon"></i><em>4课时14分钟</em>
+                                                                </dd>
+                                                                <dd class="zhongji" style="display: none;">
+                                                                    <i class="xinhao-icon2"></i><em>中级</em>
+                                                                </dd>
+                                                            </dl>
+                                                            <em class="learn-number" style="display: none;">2192人学习</em>
+                                                        </div>
+                                                        <div class="cf">
+                                                            <div class="lessonicon-box" style="bottom: 4px;">
+                                                                <a href="#">
+                                                                    <img width="16" src="./img/572318c5ac303.png" alt="tencent" title="腾讯云" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3097&amp;posColumn=3097.1&amp;aCCate=tencent">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!--list end-->
+                                        </ul>
+                                    </div>
+                                    <!-- 核心课程块结束 -->
+                                    <!-- 底部页面导航 -->
+                                    <div id="page-nav">
+                                        <ul class="pages">
+                                            <li class="pgNext pgEmpty">首页</li>
+                                            <li class="pgNext pgEmpty">上一页</li>
+                                            <li class="page-number pgCurrent">1</li>
+                                            <li class="page-number">2</li>
+                                            <li class="page-number">3</li>
+                                            <li class="page-number">4</li>
+                                            <li class="page-number">5</li>
+                                            <li class="page-number">6</li>
+                                            <li class="page-number">7</li>
+                                            <li class="thpoint">...</li>
+                                            <li class="pgNext">下一页</li>
+                                            <li class="pgNext">末页</li>
+                                            <li class="thpoint pagetotal" style="margin-top:3px;">共 95 页</li>
+                                            <li class="thpoint pagenow">当前
+                                                <input value="1" maxlength="6" id="gotoval" style="width:20px; height:16px;margin-top:-3px;padding-top:2px;padding-left:10px;" type="text">页</li>
+                                            <li class="pgNext go">确定</li>
+                                        </ul>
+                                    </div>
+                                    <!-- 底部页面导航结束 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- left 分类 -->
+                    <div id="aside" class="f_l">
+                        <!-- 课程库主标题样式 -->
+                        <div class="aside-allCategory">
+                            <!-- 第一行标题样式：DIV包裹，H2标签、i标签占位显示图标-->
+                            <div class="hd">
+                                <h2><a href="#"><i class="icon-course-curr"></i>课程库</a></h2>
+                            </div>
+                            <div class="bd">
+                                <ul class="aside-cList">
+                                    <!-- 第一级面包屑：移动开发 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="1" href="#">移动开发</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="58">应用开发</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="59">Android</a>
+                                                            <a href="#" cgid="60">iOS</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="63">Cocos</a>
+                                                            <a href="#" cgid="64">Unity3D</a>
+                                                            <a href="#" cgid="65">SpriteKit 2D</a>
+                                                            <a href="#">Unreal</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="14">常用框架</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="68">Cordova</a>
+                                                            <a href="#" cgid="382">React Native</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!--  list-show  -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：前端基础 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="2" href="#">前端开发</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="16">前端基础</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="76">HTML</a>
+                                                            <a href="#" cgid="77">CSS</a>
+                                                            <a href="#" cgid="78">JavaScript</a>
+                                                            <a href="#" cgid="79">HTML5</a>
+                                                            <a href="#" cgid="80">CSS3</a>
+                                                            <a href="#" cgid="81">技术前瞻</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="18">前端进阶</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="97">Typescript</a>
+                                                            <a href="#" cgid="98">前端安全</a>
+                                                            <a href="#" cgid="99">项目实战</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="17">前端框架</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="82">jQuery</a>
+                                                            <a href="#" cgid="83">jQuery UI</a>
+                                                            <a href="#" cgid="84">jQuery Mobile</a>
+                                                            <a href="#" cgid="85">Ext JS</a>
+                                                            <a href="#" cgid="86">AngularJS</a>
+                                                            <a href="#" cgid="87">ReactJS</a>
+                                                            <a href="#" cgid="94">Bootstrap</a>
+                                                            <a href="#" cgid="371">React Native</a>
+                                                            <a href="#" cgid="372">Backbone</a>
+                                                            <a href="#" cgid="373">Three.js</a>
+                                                            <a href="#" cgid="374">MooTools</a>
+                                                            <a href="#" cgid="375">Compass</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="19">HTML5游戏</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="100">Canvas</a>
+                                                            <a href="#" cgid="102">SVG</a>
+                                                            <a href="#" cgid="103">WebGL</a>
+                                                            <a href="#" cgid="105">Cocos2d-js</a>
+                                                            <a href="#" cgid="106">CreateJS</a>
+                                                            <a href="#" cgid="107">Flash</a>
+                                                            <a href="#" cgid="108">Unreal</a>
+                                                            <a href="#" cgid="109">Egret</a>
+                                                            <a href="#" cgid="376">Phaser</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：后端开发 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="3" href="#">后端开发</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="23">Python</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="147">Python 基础</a>
+                                                            <a href="#" cgid="148">web2py</a>
+                                                            <a href="#" cgid="149">Django</a>
+                                                            <a href="#" cgid="150">Flask</a>
+                                                            <a href="#" cgid="393">GUI</a>
+                                                            <a href="#" cgid="394">数据挖掘与分析</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="21">PHP</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="123">PHP 基础</a>
+                                                            <a href="#" cgid="125">YII</a>
+                                                            <a href="#" cgid="126">ThinkPHP</a>
+                                                            <a href="#" cgid="127">Laravel</a>
+                                                            <a href="#" cgid="128">WordPress</a>
+                                                            <a href="#" cgid="131">Phalcon</a>
+                                                            <a href="#" cgid="135">Apache</a>
+                                                            <a href="#" cgid="136">Facebook Hack</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="26">Node.js</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="158">Node.js 基础</a>
+                                                            <a href="#" cgid="159">express</a>
+                                                            <a href="#" cgid="161">Meteor</a>
+                                                            <a href="#" cgid="386">Hexo</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="22">ASP.NET</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="137">C#</a>
+                                                            <a href="#" cgid="139">ASP.NET MVC</a>
+                                                            <a href="#" cgid="140">Entity Framework</a>
+                                                            <a href="#" cgid="368">WPF</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="20">J2EE</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="111">JSP</a>
+                                                            <a href="#" cgid="112">Maven</a>
+                                                            <a href="#" cgid="114">Spring</a>
+                                                            <a href="#" cgid="115">SpringMVC</a>
+                                                            <a href="#" cgid="116">Struts2</a>
+                                                            <a href="#" cgid="117">MyBatis</a>
+                                                            <a href="#" cgid="118">Hibernate</a>
+                                                            <a href="#" cgid="120">Lucene</a>
+                                                            <a href="#" cgid="369">常用框架</a>
+                                                            <a href="#" cgid="370">项目实战</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="24">Ruby</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="151">Ruby 基础</a>
+                                                            <a href="#" cgid="152">Ruby on Rails</a>
+                                                            <a href="#" cgid="153">Grape</a>
+                                                            <a href="#" cgid="366">Ruby进阶</a>
+                                                            <a href="#" cgid="367">RubyMine</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="25">Go</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="155">Go 基础</a>
+                                                            <a href="#" cgid="156">Revel</a>
+                                                            <a href="#" cgid="157">beego</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="387">Erlang</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="388">Erlang 基础</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：基础知识 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="4" href="#">基础知识</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="27">基础语言</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="162">C</a>
+                                                            <a href="#" cgid="163">C++</a>
+                                                            <a href="#" cgid="165">Objective-C</a>
+                                                            <a href="#" cgid="166">Swift</a>
+                                                            <a href="#" cgid="167">C#</a>
+                                                            <a href="#" cgid="168">Java</a>
+                                                            <a href="#" cgid="169">Perl</a>
+                                                            <a href="#" cgid="170">Shell</a>
+                                                            <a href="#" cgid="171">Qt</a>
+                                                            <a href="#" cgid="390">Scala</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="28">计算机基础</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="172">计算机组成原理</a>
+                                                            <a href="#" cgid="173">网络工程</a>
+                                                            <a href="#" cgid="175">Word</a>
+                                                            <a href="#" cgid="176">Excel</a>
+                                                            <a href="#" cgid="177">PowerPoint</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="29">开发基础</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="178">算法基础</a>
+                                                            <a href="#" cgid="179">数据结构</a>
+                                                            <a href="#" cgid="180">设计模式</a>
+                                                            <a href="#" cgid="181">软件工程</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="30">开发工具</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="183">Git/Github</a>
+                                                            <a href="#" cgid="184">SVN</a>
+                                                            <a href="#" cgid="185">VI</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="31">开放标准</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="186">OpenCL</a>
+                                                            <a href="#" cgid="187">Open XML</a>
+                                                            <a href="#" cgid="188">OpenGL/GLES</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：云计算&amp;大数据 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="5" href="#">云计算&amp;大数据</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="32">云计算</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="189">OpenStack</a>
+                                                            <a href="#" cgid="191">Docker</a>
+                                                            <a href="#" cgid="197">CloudStack</a>
+                                                            <a href="#" cgid="378">Windows Azure</a>
+                                                            <a href="#" cgid="389">IaaS</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="33">大数据</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="198">Hadoop</a>
+                                                            <a href="#" cgid="200">Storm</a>
+                                                            <a href="#" cgid="204">Hive</a>
+                                                            <a href="#" cgid="206">Flume</a>
+                                                            <a href="#" cgid="208">Kafka</a>
+                                                            <a href="#" cgid="209">Zookeeper</a>
+                                                            <a href="#" cgid="211">Hbase</a>
+                                                            <a href="#" cgid="213">Spark</a>
+                                                            <a href="#" cgid="377">信息检索</a>
+                                                            <a href="#" cgid="383">数据分析</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="34">虚拟化</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="220">VMware</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="391">云平台</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="392">腾讯云</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：智能硬件&amp;物联网 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="6" href="#">智能硬件&amp;物联网</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="35">硬件架构</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="222">C51</a>
+                                                            <a href="#" cgid="223">ARM</a>
+                                                            <a href="#" cgid="226">Keil</a>
+                                                            <a href="#" cgid="228">Cortex-M</a>
+                                                            <a href="#" cgid="229">Cortex-A</a>
+                                                            <a href="#" cgid="379">AVR</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="36">物联网操作系统</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="231">RTOS</a>
+                                                            <a href="#" cgid="233">Android Wear</a>
+                                                            <a href="#" cgid="236">Apple Watchkit</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="37">开源硬件平台</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="237">Arduino</a>
+                                                            <a href="#" cgid="238">树莓派</a>
+                                                            <a href="#" cgid="239">mbed</a>
+                                                            <a href="#" cgid="242">GoKit</a>
+                                                            <a href="#" cgid="395">LeMaker Guitar</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="38">通信链接技术</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="243">无线WiFi</a>
+                                                            <a href="#" cgid="244">移动通信</a>
+                                                            <a href="#" cgid="245">蓝牙</a>
+                                                            <a href="#" cgid="247">NFC</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="39">信息感知处理技术</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="251">传感器</a>
+                                                            <a href="#" cgid="255">数据挖掘</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="40">人机交互技术</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="257">语音识别</a>
+                                                            <a href="#" cgid="259">人脸识别</a>
+                                                            <a href="#" cgid="261">手势识别</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：数据库 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="7" href="#">数据库</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="41">SQL</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="262">MySQL</a>
+                                                            <a href="#" cgid="263">SQL Server</a>
+                                                            <a href="#" cgid="264">Oracle</a>
+                                                            <a href="#" cgid="265">SQLite</a>
+                                                            <a href="#" cgid="266">PostgreSQL</a>
+                                                            <a href="#" cgid="267">DB2</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="42">NoSQL</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="212">Cassandra</a>
+                                                            <a href="#" cgid="269">Redis</a>
+                                                            <a href="#" cgid="271">MongoDB</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：认证考试 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="8" href="#">认证考试</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="43">计算机等级考试</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="275">一级</a>
+                                                            <a href="#" cgid="276">二级C</a>
+                                                            <a href="#" cgid="277">二级Java</a>
+                                                            <a href="#" cgid="278">二级C++</a>
+                                                            <a href="#" cgid="281">网络工程师</a>
+                                                            <a href="#" cgid="282">数据库工程师</a>
+                                                            <a href="#" cgid="283">信息安全工程师</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="45">企业认证</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="298">思科认证</a>
+                                                            <a href="#" cgid="299">Oracle认证</a>
+                                                            <a href="#" cgid="301">Linux认证</a>
+                                                            <a href="#" cgid="302">ARM认证</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：企业 IT -->
+                                    <li>
+                                        <div>
+                                            <a cgid="9" href="#">企业 IT</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="46">运维管理</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="303">Shell</a>
+                                                            <a href="#" cgid="304">自动化运维</a>
+                                                            <a href="#" cgid="305">Nginx</a>
+                                                            <a href="#" cgid="308">Apache</a>
+                                                            <a href="#" cgid="380">运维监控</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="47">商业智能</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="310">FileMaker</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="48">操作系统</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="311">Linux</a>
+                                                            <a href="#" cgid="312">Windows</a>
+                                                            <a href="#" cgid="313">Mac OS</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="384">企业服务</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="385">B2C</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                    <!-- 第一级面包屑：设计&amp;产品&amp;测试 -->
+                                    <li>
+                                        <div>
+                                            <a cgid="11" href="#">设计&amp;产品&amp;测试</a>
+                                            <div class="list-show">
+                                                <div>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="51">设计基础</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="327">Photoshop</a>
+                                                            <a href="#" cgid="329">Flash</a>
+                                                            <a href="#" cgid="330">Illustrator</a>
+                                                            <a href="#" cgid="331">Sketch</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="52">游戏设计</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="336">界面设计</a>
+                                                            <a href="#" cgid="338">角色设计</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="54">产品经理</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="341">需求分析</a>
+                                                            <a href="#" cgid="343">Axure</a>
+                                                            <a href="#" cgid="344">项目实战</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="362">视觉设计</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="340">应用UI设计</a>
+                                                            <a href="#" cgid="363">网页UI设计</a>
+                                                            <a href="#" cgid="364">设计理论</a>
+                                                            <a href="#" cgid="365">图形设计</a>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt><a href="#" cgid="50">测试工具</a></dt>
+                                                        <dd class="cf">
+                                                            <a href="#" cgid="325">自动化测试</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- list-show -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /bd -->
+                        </div>
+                        <!-- 下面没有弹出菜单的列表 -->
+                        <ul class="hdlist">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-zylj"></i>职业路径图
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-zstx"></i>知识体系图
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-xlkc"></i>系列课程
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-kcbq"></i>课程标签
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分结束-->
+        <!-- 页面底部 -->
+        <div id="footer" class="mar-t50">
+            <!-- footer由两大块构成，一块为极客学院信息板块，一块为备案等版权信息 -->
+            <!-- <link rel="stylesheet" href="./curs构成ondemo_files/footer.css"> -->
+            <div class=" jkinfor-block">
+                <div class="jkinfor cf">
+                    <div class="jk-logo">
+                        <img src="./img/jk-logo-footer.png">
+                        <p>极客学院，编程是一种信仰！</p>
+                    </div>
+                    <dl>
+                        <dt>职业学院</dt>
+                        <dd><a target="_blank" href="#">Web前端工程师</a></dd>
+                        <dd><a target="_blank" href="#">Python Web工程师</a></dd>
+                        <dd><a target="_blank" href="#">Go语言工程师</a></dd>
+                        <!--<dd><a target="_blank" href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_in">Android学院</a></dd>-->
+                        <dd><a target="_blank" href="#">iOS工程师</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>会员课程</dt>
+                        <dd><a target="_blank" href="#">课程库</a></dd>
+                        <dd><a target="_blank" href="#">知识体系图</a></dd>
+                        <dd><a target="_blank" href="#">职业路径图</a></dd>
+                        <dd><a target="_blank" href="#">系列课程</a></dd>
+                        <dd><a target="_blank" href="#">课程标签</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>极客社区</dt>
+                        <dd><a target="_blank" href="#">技术问答</a></dd>
+                        <dd><a target="_blank" href="#">Wiki</a></dd>
+                        <dd><a target="_blank" href="#">资源下载</a></dd>
+                        <dd><a target="_blank" href="#">社群</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>其他</dt>
+                        <dd><a target="_blank" href="#">关于我们</a></dd>
+                        <dd><a target="_blank" href="#">加入我们</a></dd>
+                        <dd><a target="_blank" href="#">讲师合作</a></dd>
+                        <dd><a target="_blank" href="#">联系我们</a></dd>
+                        <dd><a target="_blank" href="#">友情链接</a></dd>
+                    </dl>
+                    <div class="jk-down">
+                        <p class="hot-tel">服务热线:400-678-8266</p>
+                        <div class="downCon down-ios">
+                            <img src="./img/app.png" class="twoCode" alt="下载二维码"> iPhone
+                        </div>
+                        <div class="downCon down-and">
+                            <img src="./img/app.png" class="twoCode" alt="下载二维码"> Android
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 备案等版权信息 -->
+            <div class="w-1000 copyright">
+                Copyright © 2013-2016&nbsp;<strong><a href="#" target="_blank">jikexueyuan.com</a></strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+                <!-- 微信及新浪下载logo设置 -->
+                <a href="#" target="_blank" class="down-wechat"></a>
+                <a href="#" target="_blank" class="down-sina"></a>
+                <!-- 诚信网站下载logo标志 -->
+                <a style="display:block; margin: 15px auto 0" id="___szfw_logo___" href="#" target="_blank"><img src="./img/cert.png" width="60px" border="0"></a>
+                <script type="text/javascript">
+                // 这段代码自执行，在征信logo上绑定HTML Dom事件，防止打开鼠标右键
+                (function() {
+                    document.getElementById('___szfw_logo___').oncontextmenu = function() {
+                        return false;
+                    }
+                })();
+                </script>
+            </div>
+        </div>
+        <!-- 页面底部结束 -->
+        <!-- gototop跳转快捷键 -->
+        <div class="gotop" id="gototop">
+            <span class="top" style="display: block;"></span>
+            <span class="erwma" style="display:none;">
+		<img src="./css/erwma.png" style="display: none;">
+	</span>
+            <a href="#" alt="极客学院应用" target="_blank">
+                <span class="jk-app">
+                <div class="appewm">                	
+                </div>
+                </span>
+            </a>
+            <a href="javascript:;" id="diaochaid" class="diaocha">
+              <!--   <iframe id="iframe2478912_0" onload="BAIDU_SSP_renderFrame('2478912_0', this);" src="about:blank" width="34" height="34" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true"></iframe> -->
+            </a>
+            <!--<a onclick="doyoo.util.openChat('g=10059996');return false;" href="javascript:;" class="apply qq-online qq-online1" rel="nofollow"><span class="kefu">在线客服<br>  工作日9:00-21:00在线<i></i></span></a>-->
+        </div>
+    </div>
+    <script src="./js/jquery-1.10.0.js"></script>
+    <script type="text/javascript">
+    // 搜索logo弹出搜索栏
+    $("#search-btn").on("click", function(event) {
+        $("#searchbox").css({
+            display: 'block',
+            transform: 'scale(1, 1)',
+            opacity: 1
+        });
+    });
+    // 关闭按钮，关闭搜索栏
+    $("#close-btn").on("click", function(event) {
+        $("#searchbox").css({
+            display: 'none',
+            transform: 'scale(0.1, 1)',
+            opacity: 0
+        });
+    });
+    // 绑定切换开关,九宫格
+    $("#kuai-icon").click(function(event) {
+        var l = $("#changeid").html();
+        // 如果是lesson-list2，则更换类，否则不动
+        if ($("#changeid").hasClass('lesson-list2')) { //还有一种判断方法：if ($('.ybvideo ul').length > 0)
+            $("#changeid").removeClass('lesson-list2');
+            $("#changeid").addClass('lesson-list');
+            $("#changeid").html(l);
+        }
+
+    });
+    //列表切换开关
+    $("#list-icon").click(function(event) {
+        var l = $("#changeid").html();
+
+        if (!$("#changeid").hasClass('lesson-list2')) {
+            $("#changeid").removeClass('lesson-list');
+            $("#changeid").addClass('lesson-list2');
+            $("#changeid").html(l);
+        }
+    });
+    // 两种课程样式动态效果切换
+    $('#changeid').on("mouseover mouseout", ".cf>li", function(event) {
+        var d = $('#changeid>.cf>li').eq($('#changeid>.cf>li').index($(this)));
+        if (event.type == "mouseover") { //鼠标悬浮
+            //如何是#changeid含有树型样式，否则为九宫格
+            if ($("#changeid").hasClass('lesson-list2')) {
+                d.find(".lessonplay").css('opacity', 1);
+            } else { //lesson-list
+                // lesson-infor整个下部分div高度设置为175
+                d.children(".lesson-infor").css('height', 175);
+                // d.children(".lesson-infor").addClass("lesson-hover");
+                //播放按钮不透明，显示出来
+                d.find(".lessonplay").css('opacity', 1);
+                d.find(".learn-number").show();
+                d.find(".zhongji").show();
+                //定位右下角腾讯云的位置
+                d.find(".lessonicon-box").css("bottom", "-2px");
+                //设置弹出内容的详细文字按钮样式
+                d.children(".lesson-infor").find("p").css({
+                    display: "block",
+                    height: 52,
+                    opacity: 1
+                }).slideDown("slow");
+
+            }
+
+        } else if (event.type == "mouseout") { //鼠标离开
+
+            if ($("#changeid").hasClass('lesson-list2')) {
+                d.find(".lessonplay").css('opacity', 0);
+            } else {
+                d.find(".lessonplay").css('opacity', 0);
+                d.find(".zhongji").hide();
+                d.find(".learn-number").hide();
+                //  d.children(".lesson-infor").removeClass("lesson-hover");
+                d.find(".lessonicon-box").css("bottom", "4px");
+                d.children(".lesson-infor").css('height', 88);
+                d.children(".lesson-infor").find("p").css({
+                    display: "none",
+                    height: 0,
+                    opacity: 0
+                });
+
+            }
+
+        }
+    })
+    </script>
+</body>
+
+</html>

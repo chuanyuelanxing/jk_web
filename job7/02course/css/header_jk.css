@@ -1,0 +1,668 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+	border: 0 none;
+}
+/*导航栏右边的动画箭头*/
+.arrow-icon {
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	display: inline-block;
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform-origin: 4px 4px;
+}
+
+input::-ms-clear {
+	display: none;
+}
+/*配置base层的基础样式*/
+#header img,
+#header ul,
+#header nav,
+#header div,
+#header span,
+#header a,
+#header i,
+#header h3 {/*头部容器的通用样式：文本无修饰、内外边距为0、垂直居中、包含边距的盒模型、字体（这一些mybase也设置了）*/
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px; /*这里覆盖了w-1000设置的margin: 0px auto;造成不能居中*/
+	vertical-align: middle;
+	box-sizing: border-box;
+	font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+} 
+#header {/*定义头部样式，无内外边距，高60px，带1px底部边框，背景色为白色*/
+	padding: 0px;
+	margin: 0px;
+	height: 60px;
+	border-bottom: 1px solid #ececec;
+	background: #fff;
+}
+
+/*用户各种状态时候，雪碧图的定位，显示认证标志*/
+#header .year-vip,
+#header .ty-vip,
+#header .rz-vip,
+#header .month-vip,
+#header .xf-vip {
+	background: url("../img/allvipicon.png");
+	background-size: 306px 16px;
+	display: inline-block;
+	width: 45px;
+	height: 14px;
+}
+/*未认证标志*/
+#header .rzno-vip {
+	margin-right: 10px;
+	display: inline-block;
+	width: 45px;
+	height: 14px;
+	background: url("../img/rz-no.png");
+	background-size: 45px 14px;
+}
+
+#header .year-vip {
+	background-position: -143px -1px
+}
+
+#header .rz-vip {
+	background-position: -191px -1px;
+	margin-right: 10px;
+}
+
+#header .ty-vip {
+	background-position: -96px -1px;
+}
+
+#header .month-vip {
+	background-position: -48px -1px;
+}
+
+#header .xf-vip {
+	background-position: -1px -1px;
+}
+#header .year-vip,
+#header .ty-vip,
+#header .rz-vip,
+#header .month-vip,
+#header .xf-vip {
+	background: url("../img/allvipicon.png");
+	background-size: 306px 16px;
+	display: inline-block;
+	width: 45px;
+	height: 14px;
+}
+
+#header .rzno-vip {
+	margin-right: 10px;
+	display: inline-block;
+	width: 45px;
+	height: 14px;
+	background: url("../img/rz-no.png");
+	background-size: 45px 14px;
+}
+
+#header .year-vip {
+	background-position: -143px -1px
+}
+
+#header .rz-vip {
+	background-position: -191px -1px;
+	margin-right: 10px;
+}
+
+#header .ty-vip {
+	background-position: -96px -1px;
+}
+
+#header .month-vip {
+	background-position: -48px -1px;
+}
+
+#header .xf-vip {
+	background-position: -1px -1px;
+}
+
+
+
+#header .relative {
+	position: relative;
+}
+
+#header .logo {/*头部logo样式设置*/
+	width: 109px;
+	display: inline-block;
+	margin-right: 60px;
+	height: 60px;
+	float: left;
+}
+#header .logo img {
+	float: left;
+	width: 109px;
+	margin-top: 10px;
+	border:0 none;
+}
+/*头部导航栏样式设置*/
+#header nav {
+	height: 60px;
+	display: inline-block;
+	float: left;
+}
+
+#header nav a {
+	color: #333;
+}
+/*下拉菜单中的子标签hover状态下变成绿颜色*/
+#header nav a:hover {
+	color: #35b558;
+}
+
+#header nav li {
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 50px;
+	cursor: pointer;
+	height: 60px;
+	float: left;
+}
+#header nav li i {
+	margin-left: 5px;
+}
+
+#header nav li i.arrow-up-icon {
+	margin-bottom: -3px;
+}
+
+#header nav li i.arrow-icon {
+	margin-bottom: 2px;
+}
+
+#header nav li:hover {
+	color: #35b558;
+	cursor: pointer;
+}
+
+#header nav li:hover i.arrow-icon {
+	margin-bottom: -2px;
+	border-top: 1px solid #35b558;
+	border-left: 1px solid #35b558;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	animation: rotate 1s ease normal;
+	-moz-animation: rotate 1s ease normal;
+	-webkit-animation: rotate 1s ease normal;
+}
+
+@keyframes rotate {
+	0% {
+		margin-bottom: 2px;
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		-moz-transform: rotate(-135deg);
+		-ms-transform: rotate(-135deg);
+	}
+	10% {
+		margin-bottom: -2px;
+	}
+	100% {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	}
+}
+/*导航栏<li>在hover状态下的 下拉菜单.submenu样式*/
+#header nav li:hover .submenu {
+	display: block;
+	opacity: 1;/*设置由初始状态的全透明变为不透明显示出来*/
+	animation: myfirst 0.8s ease normal;
+	-moz-animation: myfirst 0.8s ease normal;
+	-webkit-animation: myfirst 0.8s ease normal;
+}
+
+@keyframes myfirst {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes myfirst
+/* Firefox */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes myfirst
+/* Safari and Chrome */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes myfirst
+/* Opera */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#header nav li:last-child {/*:last-child选择器用来匹配父元素中最后一个子元素，这里是指最后一个li标签*/
+	margin-right: 0;
+}
+
+/*头部整体样式设置*/
+#header .w-1000 {
+	width: 1000px;
+	margin: 0 auto;/*不写这个不能自动居中*/
+	height: 60px;
+	line-height: 60px;
+}
+
+#header .w-1280 {
+	width: 1280px;
+	margin: 0 auto;
+}
+/*头部导航栏下拉菜单的样式：默认不显示、全透明、绝对定位、白底棕字、顶部贴着导航栏、字体及宽度*/
+#header nav .submenu {
+	/*这个必须不显示，不能屏蔽选择全透明，否则鼠标移动到这里就会自动弹出下拉菜单*/
+	display: none;
+	opacity: 0;/*全透明*/
+	position: absolute;
+	z-index: 1000;
+	top: 60px;
+	left: 0;
+	background: #fff;
+	font-size: 12px;
+	color: #666;
+	width: 280px;
+}
+#header nav .submenu h3 { /*设置子菜单标题栏h3样式：外边距上下10，内边距左右15，浅白色、行高及高28、字比正常略细300*/
+	margin: 10px 0;
+	padding: 0 15px;
+	background: #fafafa;
+	height: 28px;
+	line-height: 28px;
+	font-weight: 300;
+}
+#header nav .submenu a {/*设置子菜单标题栏中a标签的子项目为块元素、高30、内边距左右15*/
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+}
+#header nav .submenu a:last-child {/*最后一个a标签，就是最后一栏的时候，设置内边距底为10px*/
+	padding-bottom: 10px;
+}
+
+/*vip-lesson是会员课程、极客社区两个下拉菜单的样式；职业学院的类.school-list 拆分成各种组合了*/
+#header nav .vip-lesson { 
+	padding: 10px 0;
+}
+
+/*在子菜单通用a的样式下，单独设置.vip-lesson a样式*/
+#header nav .vip-lesson a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+/*设置课程有多少人在学的样式，及位置*/
+#header nav .vip-lesson a span {
+	color: #bbb;
+	float: right;
+}
+/*这里就是在a:hover状态下，修改背景颜色及前景色变成：白底绿字*/
+#header nav .vip-lesson a:hover {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	background: #fafafa;
+	color: #35b558;
+}
+
+/*右上角的搜索、APP、登录 icon栏*/
+#header .icon-box {
+	float: right;
+	text-align: right;
+	width: 200px;
+	margin-right: 10px;
+	height: 60px;
+}
+/*设置3个span的样式，搜索、APP、登录分别放在span内*/
+#header .icon-box span {
+	height: 60px;
+	width: 17px;
+	display: inline-block;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+/*搜索icon设置*/
+#header .search-icon {
+	background: url("../img/search-icon.png") 0 0 no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+	/*下面这三行不能屏蔽，屏蔽了这弹出搜索框内左边就不出现搜索logo了*/
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+}
+#header .search-icon:hover {
+	background: url("../img/search-icon2.png") 0 0 no-repeat;
+	background-size: 17px 17px;
+	background-position: 0, 0;
+}
+
+/*把APP搜索图标样式还有其二维码下载样式设置*/
+#header .icon-box .app-icon {
+     /*本地路径引用必须为../，可以理解为css出发找文件*/
+	background: url('../img/app-icon.png') 0 0 no-repeat;
+	background-size: 17px;
+	background-position: 0;
+}
+
+#header .icon-box .app-icon:hover {
+	background: url('../img/app-icon2.png') 0 0 no-repeat;
+	background-size: 17px;
+	background-position: 0;
+}
+
+
+/*二维吗下载下拉菜单样式*/
+#header .icon-box .app-icon .submenu {
+	padding: 0;
+	right: -50px;
+}
+
+#header .icon-box .app-icon .submenu img {
+	width: 100%;
+}
+/*二维码下拉菜单上的半个三角形*/
+#header .icon-box .app-icon .submenu .top-icon {
+	right: 50px;
+}
+/*右上角未登录时候logo*/
+#header .icon-box .login-icon {
+	background: url("../img/login-icon.png") 0 0 no-repeat;
+	background-size: 17px;
+	background-position: 0;
+}
+/*右上角登录icon登录后样式设置*/
+#header .icon-box .logged {
+	height: 60px!important;
+	width: 25px!important;
+	position: relative
+}
+/*右上角登录icon登录后下拉菜单上的三角形样式设置*/
+#header .icon-box .logged .top-icon {
+	margin-right: 5px !important;
+}
+/*右上角登录icon登录后头像设置*/
+#header .icon-box .logged img {
+	width: 25px;
+	height: 25px;
+	margin-top: 13px;
+	display: block;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+/*点击搜索图标后弹出的搜索框，初始状态不显示且为全透明*/
+#header .searchbox {
+	display: none;
+	transform: scale(0.1, 1);
+	-moz-transform: scale(0.1, 1);
+	opacity: 0;
+	height: 59px;
+	line-height: 59px;
+	width: 850px;
+	background: #fff;
+	position: absolute;
+	z-index: 11000;
+	top: 0;
+	right: 0;
+}
+
+/*弹出的搜索框的样式初始化，无边框无轮廓*/
+#web_search_header {
+	border: none;
+	outline: none;
+}
+/*搜索框中输入框样式*/
+#header .searchbox input {
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	font-size: 12px;
+	vertical-align: top;
+	margin-left: 10px;
+}
+/*输入框右边三个标签大小样式*/
+#header .searchbox .tagbox {
+	width: 300px;
+	text-align: right;
+	display: inline;
+	margin-right: 50px;
+	float: right;
+}
+/*输入框右边三个字体背景等样式设置*/
+#header .searchbox .tagbox a {
+	font-size: 12px;
+	color: #808080;
+	background: #f5f5f5;
+	padding: 3px 5px;
+	margin-left: 10px;
+}
+/*关闭标签样式*/
+#header .searchbox .close-icon {
+	width: 15px;
+	height: 15px;
+	margin-top: 22px;
+	cursor: pointer;
+	background: url("../img/close-icon.png") 0 0 no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	z-index: 1200;
+}
+
+/*设置登录进来后各个状态下标签样式，这里定义的是登录框dd i及用户登录进来后下拉菜单左边的各个雪碧图表示的小logo图标*/
+#header .loginlist dd i,
+#uservip-icon {
+	background: url("../img/allicon2.png") 0 0 no-repeat;
+	background-size: 64px 64px;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	display: inline-block;
+}
+/*APP等log下拉菜单中样式设置*/
+.loginlist:hover .submenu {
+	display: block;
+	opacity: 1;/*显示不透明*/
+	animation: listshow 0.8s ease normal;/*动画只做从透明到不透明变换*/
+	-moz-animation: listshow 0.8s ease normal;
+	-webkit-animation: listshow 0.8s ease normal;
+}
+
+@keyframes listshow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes listshow
+/* Firefox */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes listshow
+/* Safari and Chrome */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes listshow
+/* Opera */
+
+{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*登录后的菜单设置，这个为一个组件，默认状态不显示*/
+.loginlist .submenu {
+	display: none;
+	opacity: 0;/*初始状态不透明*/
+	padding: 10px 0;
+	background: #fff;
+	position: absolute;
+	width: 120px;
+	z-index: 1200;
+	top: 58px;
+	right: -10px;
+}
+/*登录后弹出菜单上的半个三角形*/
+.loginlist .submenu .top-icon {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	display: block;
+	position: absolute;
+	top: -8px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	border-top: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	display: inline-block;
+	background: #fff;
+}
+/*dl类似ul，申明一个列表项，里面的dt和dd与li相似。不过dt是上级，dd是下级；dt类似表头，dd类似表身；dt若是一级菜单，
+dd就是二级菜单。若是用dl家族系列，明显它在语义上更为直观，更符合要求，另外结构也更清晰*/
+.loginlist .submenu dd {
+	text-align: left;
+	font-size: 12px;
+	line-height: 35px;
+	vertical-align: middle;
+	margin: 0;
+	padding-left: 10px;
+}
+/*用户登录进来后下拉菜单左边的各个雪碧图表示的小logo图标*/
+#uservip-icon {
+	background: url("../img/allicon2.png") 0 0 no-repeat;
+	background-size: 64px 64px;
+	width: 13px;
+	height: 13px;
+	margin-right: 10px;
+	display: inline-block;
+	position: absolute;
+	top: 28px;
+	left: 15px;
+}
+#header .rz-icon {
+	background-position: -1px -47px;
+}
+
+#header .year-icon {
+	background-position: -1px -32px;
+}
+
+#header .month-icon {
+	background-position: -1px -16px
+}
+
+#header .ty-icon {
+	background-position: -1px -1px
+}
+
+#header .xf-icon {
+	background-position: -16px -47px
+}
+
+#header .loginlist .xxzx-icon {
+	background-position: -16px -15px
+}
+
+#header .loginlist .grzy-icon {
+	background-position: -45px -1px
+}
+
+#header .loginlist .xxtz-icon {
+	background-position: -16px -30px
+}
+
+#header .loginlist .zhsz-icon {
+	background-position: -30px -1px
+}
+
+#header .loginlist .tc-icon {
+	background-position: -16px -1px
+}/*以上都是登录后，右上角定位雪碧图位置*/
+
+
+
+
+
+
+
+
+
+
+
+
