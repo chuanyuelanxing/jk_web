@@ -1,0 +1,37 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.fleft {
+    float: left;
+    width: 300px;
+    background: blue;
+}
+
+.fright {
+    float: left;
+    margin-left: 5px;
+    width: 300px;
+    background: green;
+}
+
+.col {
+
+
+    border:5px solid #000;
+    
+    
+   
+    column-count:3;
+    column-gap:20px;/* 用长度值来定义列与列之间的间隙。不允许负值 */
+    column-rule-style:dotted;
+    column-width:150px;/* 增加列宽防止覆盖图片 */
+     
+   /*  -moz-columns:4;
+   -webkit-columns:4; */
+
+     column-rule-width:thick;
+}
+   
+}
