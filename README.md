@@ -73,3 +73,98 @@
 
 ###   4. [完成初级前端面试题](http://jiuye.jikexueyuan.com/task/174-4)
 ####  本作业为开放性作业，不对页面作特别要求，HTML页面（建议，作为一名前端）、图片、word都可以。主要是总结的面试题。让大家对于前端面试和前端基本岗位要求有个基本的了解。
+## 第五周作业 JavaScript入门和基础
+
+###  1. [将0~100分学员以10分为界，分为十段，然后计算出该生为数字几等生](http://jiuye.jikexueyuan.com/task/174-5)
+
+#### 书写Js函数，将0-100分学员，以10为分界，10分为一段，根据传入的分数计算出该生为数字几等生，如给函数传入98分，该分数在90-100区间为1等生，65分在60-70区间为4等生。
+考查点：1、Switch或者ifelse等的使用；2、根据传入的值，进行运算和返回；更多请参阅【作业提示】。
+###   2. [用JS开发简易计算器](http://jiuye.jikexueyuan.com/task/174-5)
+#### 用JS开发简易计算器，输入 x 、y 以及操作符可以计算出数值，如函数计算器输入 4，5，* 可以返回20，输入3 ，8，+可以等于11。更多参阅【解题提示】。
+
+###   3. [JS找到数组中出现次数最多的字母，并给出个数和每一个所在的位置](http://jiuye.jikexueyuan.com/task/174-5)
+#### 通过JavaScript代码找到给定数组[“a“，”x“，”b“，”d“，”m“，”a“，”k，“m”，“p”，“j”，“a”]中（1）出现次数最多的字母，（2）并给出其出现的总次数以及（3）出现次数最多的这个字母每一个所在的位置，即索引下标。可以做成HTML界面的形式，也可以在浏览器console打印出来，方便老师批阅检查结果。更多参阅【解题提示】
+## 第六周作业 JavaScript DOM、BOM、事件和高级技巧
+
+###  1. [开发完整计算器](http://jiuye.jikexueyuan.com/task/174-6)
+
+#### 开发带HTML页面可操作的完整计算器，根据用户的按钮操作给出正确的计算结果，至少要适配到IE8+、Chrome。【绑定事件务必兼容IE8+、 FireFox、Chrome】
+其它参见【作业提示】【讲解视频】
+###   2. [hao123换肤功能-开发一个顶部带可选颜色换肤的hao123网站](http://jiuye.jikexueyuan.com/task/174-6)
+#### 开发一个顶部带可选颜色的hao123网站，点击这些颜色可换肤改变网站主题，并且能记住用户本次点击的换肤操作，下次进入网站可直接应用到上次主题。包括顶部banner以及背景颜色等等。其它参见【作业提示】
+## 第七周作业 掌握HTML+CSS核心技巧以及响应式布局
+
+###  1. [完成百度首页登陆之后完整版](http://jiuye.jikexueyuan.com/task/174-7)
+
+#### 利用Jquery完成百度右侧下拉, 并注册账号登陆完成全部页面切换效果。包括换肤和下面的切换Tab.
+
+###   2. [极客学院官网二级菜单页面-课程库页面](http://jiuye.jikexueyuan.com/task/174-7)
+#### 【综合项目实战】利用学过的JavaScript、JQuery知识和前面学过的HTML、CSS完成极客学院二级菜单页面-[课程库]页面，并完成全部动态效果，尽量增加动画效果。要求：浏览器需兼容FireFox、Chrome、ie8+。课程库页面入口：http://www.jikexueyuan.com/course/ 。详情请参考【讲解视频】和【作业提示】
+
+###   3. [JQuery完成百度图片瀑布流布局。](http://jiuye.jikexueyuan.com/task/174-7)
+#### 【综合项目实战】利用Jquery完成百度图片完整瀑布流布局。请参考【讲解视频】的讲解
+## 第八周作业 了解面向对象编程以及PHP+MySql入门（全栈）
+
+###  1. [使用PHP开发手机版本的百度新闻](http://jiuye.jikexueyuan.com/task/174-8)
+
+#### 模仿作业：仿照【必修课-第六个视频-T81开发手机版本的百度新闻】视频中老师的演示过程，配置好开发环境，开发带后台的H5版本百度新闻，完善之前开发的bootstrap后台，作为新闻的后台系统，并能用基础的PHP+MYSQL开发跑通后台。本作业的目标是让大家对后端的知识有个简单的基本了解即可，不需要精通。
+
+提示： 
+1.加入meta标签开发移动端H5页面
+2.搭建mysql+php开发环境，交作业的时候记得带上sql脚本+php代码。 3.配合ajax 技能点： 
+(1)后台是否可以正常的增删改查
+(2)前台是否可以完整调用请求接口 
+(3)完成页面的渲染结果是否在手机端展示正常
+## 第九周作业 学习NodeJS(含EcmaScript6)和移动端开发（全栈）
+
+###  1. [开发Nodejs版本的百度新闻系统](http://jiuye.jikexueyuan.com/task/174-9)
+
+#### 配置好开发环境，把之前的前端百度新闻界面拉过来，后台改成Nodejs版本，可以做成Express渲染模板形式亦可以做成rest格API形式搭载mysql,记得导出sql脚本文件。
+1.安装Express或者rest框架或者Nodejs
+2.利用Ajax配合请求。
+（先尝试独立完成，如果实在不行！再仿照“必修课”最后一个视频-【T91-模仿作业-开发Nodejs版本的百度新闻系统】视频中老师的演示过程，完成本次任务）
+
+参考资料：
+Node.js Express 框架教程：
+http://www.runoob.com/nodejs/nodejs-express-framework.html
+Nodejs与mysql实现增删改查示例1：http://www.cnblogs.com/tinyphp/p/4931336.html
+Nodejs与mysql实现增删改查示例2：http://blog.csdn.net/gebitan505/article/details/46346917
+## 第十周作业 掌握前端工业化框架(高级进阶)
+
+###  1. [利用Gulp或者FIS重组百度首页](http://jiuye.jikexueyuan.com/task/174-10)
+
+#### 利用Gulp或者FIS重新组织你的百度首页样式和JS，然后达到工程化可编译状态。
+1.安装Gulp或者FIS
+2.按照框架要求编译百度首页达到性能最优状态。
+3.通过本作业了解一种构建工具使用的基本原理即可（不同企业构建工具可能不一样，但原理基本一样），并学会独立查文档去学习新知识。
+（视频中教学用的是FIS2，如果有同学用的是FIS3也可（两个不同版本）。
+FIS2首页: http://fex-team.github.io/fis-site/index.html
+FIS2快速入门: http://fex-team.github.io/fis-site/docs/beginning/getting-started.html 
+如果用FIS3做，可以参考下选修课中补充的视频
+FIS3首页：http://fis.baidu.com）
+## 第十一周作业 掌握CSS在工程中的变化-LESS&SASS(高级进阶)
+
+###  1. [利用less或者sass改善极客学院首页CSS](http://jiuye.jikexueyuan.com/task/174-11)
+
+#### 利用less或者sass改善极客学院首页作业的CSS
+1.编写Gulp或FIS脚本对Sass或者Less进行编译。
+2.符合性能优化标准进行压缩合并以及充分利用Less或Sass优势少写代码。
+可查看官方API进行更多的运用。
+更多参见【解题提示】
+
+###   2. [利用less或sass编写公交站牌](http://jiuye.jikexueyuan.com/task/174-11)
+#### 利用less或sass编写代码制作出一个公交站牌的效果。
+## 第十二周作业 架构师要了解的JavaScript常用设计模式(高级进阶)
+
+###  1. [用设计模式改善百度js代码](http://jiuye.jikexueyuan.com/task/174-12)
+
+#### 使用简单的设计模式改写你的百度代码，并加入相应的注释说明用了什么设计模式，为什么这样写，这样写的好处。
+###   2. [总结高级前端开发工程师面试题和思维脑图](http://jiuye.jikexueyuan.com/task/174-12)
+#### 百度一下高级前端工程师面试题并总结到页面上对这些面试题有深入的理解。如果有时间可以自己利用xmind总结前端开发思维脑图。
+## 第十三周作业 项目中常用的代码管理工具Git、SVN等
+
+###  1. [搭建自己的GitHub仓库](http://jiuye.jikexueyuan.com/task/174-13)
+
+#### 搭建自己的GitHub仓库并将所有作业按照目录规范全部提交到Git，提交作业时请提交GIT地址和用户名和密码即可。
+
+
