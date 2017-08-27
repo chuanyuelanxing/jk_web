@@ -1,0 +1,19 @@
+@border0--color:red;
+
+/* 定义整个站牌的宽度及高度 */
+@sign--width:939px;
+@sign--height:1890px;
+
+@sign--bgcolor:lightyellow;
+
+.border{
+	border: 2px;
+    border-color: @border0--color;
+	border-style: solid;
+}
+
+.contain{
+	.border;
+	background: @sign--bgcolor;
+	margin: auto;
+}

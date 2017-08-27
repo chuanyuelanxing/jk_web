@@ -1,0 +1,593 @@
+/* 参考html的网页结构用嵌套的方式写页头的less */
+
+
+/*修饰符使用的是--，子模块使用__符号
+@header 表示页面头部基本样式样式变量
+@arrow-icon 表示弹出菜单箭头基本样式变量
+@submenu 表示弹出菜单基本样式变量
+*/
+
+@header--padding--size: 0px;
+@header--margin--size: 0px;
+@header--height: 60px;
+@header--bottom--style: 1px solid #ececec;
+@header--background: #fff;
+@header--width: 1000px;
+@header--fontsize: 14px;
+@arrow-icon--width: 8px;
+@arrow-icon--height: 8px;
+@arrow-icon--border: 1px solid #c1c1c1;
+@arrow-icon--border--hover: 1px solid #35b558;
+@submenu--background: #fff;
+@submenu--color: #666;
+@submenu--background: #fafafa;
+@allicon--png: "../img/allicon.png";
+@xlkc-icon--png: "../img/xlkc2.png";
+@allicon4--png: "../img/allicon4.png";
+
+/*定义各种基础样式*/
+
+.header--basestyle {
+    padding: @header--padding--size;
+    margin: @header--margin--size;
+    height: @header--height;
+    border-bottom: @header--bottom--style;
+    background: @header--background;
+}
+header img, header ul, header div, header nav, header span, header i, header a, header h3, .header--textstyle {
+    /*定义这个类本来是为了继承使用的，但是最终未能使用*/
+    /*定义文本修饰熟悉：有上划线、下划线、文本闪烁等,此处默认无格式,应用中a标签中就是取消了下划线*/
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+a, a:hover, a:link, a:visited {
+    border: 0 none;
+}
+
+/*定义app及登录图标下拉菜单的格式及大小的选中状态，弹出下载的二维码及上三角形。*/
+
+.loginlist {
+    .submenu {
+        position: absolute;
+        z-index: 1200;
+        top: 58px;
+        right: -10px;
+        display: none;
+        width: 120px;
+        padding: 10px 0;
+        /*全透明*/
+        opacity: 0;
+        background: #fff;
+    }
+    &:hover {
+        .submenu {
+            display: block;
+            -webkit-animation: listshow .8s ease normal;
+            -moz-animation: listshow .8s ease normal;
+            animation: listshow .8s ease normal;
+            opacity: 1;
+            /*我加上的边框*/
+            border: 1px solid black;
+        }
+    }
+}
+
+/* vip的iocn 的i样式*/
+
+.vip-lesson i, .school-list i {
+    background: url("@{allicon--png}") 0 0 no-repeat;
+    background-size: @arrow-icon--width*8 @arrow-icon--height*8;
+    width: @header--height*14/60;
+    height: @header--height*14/60;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+.vip-lesson .xlkc-icon, .school-list .xlkc-icon {
+    background: url("@{xlkc-icon--png}") 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+
+/* 职业学院iocn */
+
+.school-list i.python-icon, .school-list i.go-icon, .school-list i.php-icon, .school-list i.java-icon, .school-list i.ios-icon, .school-list i.android-icon {
+    background: url("@{allicon4--png}") 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 16px 148px;
+}
+
+/*vip icon的定位位置*/
+
+.icon--background-position(@x: 0, @y: 0) {
+    background-position: @arguments;
+}
+
+/*   background-position 属性设置背景图像的起始位置。第一个值是水平位置，第二个值是垂直位置。
+左上角是 0 0。单位是像素 (0px 0px) 或任何其他的 CSS 单位。如果您仅规定了一个值，另一个值将是50%。您可以混合使用 % 和 position 值。
+第四象限，定位坐标都是负数 */
+
+.vip-lesson .kck-icon, .school-list .kck-icon {
+    .icon--background-position(0, -13px);
+}
+.vip-lesson .zyljt-icon, .school-list .zyljt-icon {
+    .icon--background-position(-45px, 0);
+}
+.vip-lesson .zstxt-icon, .school-list .zstxt-icon {
+    .icon--background-position(-30px, -13px);
+}
+.vip-lesson .kcbq-icon, .school-list .kcbq-icon {
+    .icon--background-position(-15px, -13px);
+}
+.vip-lesson .vip-icon, .school-list .vip-icon {
+    .icon--background-position(-16px, 0);
+}
+.vip-lesson .jswd-icon, .school-list .jswd-icon {
+    .icon--background-position(0, -27px);
+}
+.vip-lesson .wiki-icon, .school-list .wiki-icon {
+    .icon--background-position(-29px, -27px);
+}
+.vip-lesson .sq-icon, .school-list .sq-icon {
+    .icon--background-position(0, 2px);
+}
+.vip-lesson .zygx-icon, .school-list .zygx-icon {
+    .icon--background-position(-30px, 0);
+}
+.vip-lesson .web-icon, .school-list .web-icon {
+    .icon--background-position(-15px, -27px);
+}
+.vip-lesson .android-icon, .school-list .android-icon {
+    .icon--background-position(-45px, -14px);
+}
+
+/* 职业学院各个iocn定位*/
+
+.school-list i.python-icon {
+    .icon--background-position(-2px, -2px);
+}
+.school-list i.go-icon {
+    .icon--background-position(-2px, -38px);
+}
+.school-list i.php-icon {
+    .icon--background-position(-2px, -21px);
+}
+.school-list i.java-icon {
+    .icon--background-position(-2px, -104px);
+}
+.school-list i.ios-icon {
+    .icon--background-position(-2px, -82px);
+}
+.school-list i.android-icon {
+    .icon--background-position(-2px, -58px);
+}
+
+/*头部样式*/
+
+header {
+    /*混合可以将一个定义好的class A轻松的引入到另一个class B中，从而简单实现class B继承class A中的所有属性。我们还可以带参数地调用，就像使用函数一样*/
+    .header--basestyle;
+    .header_row {
+        width: @header--width;
+        margin: 0 auto;
+        /*设置整体高度为60px；*/
+        height: @header--height;
+        /*其中每一行的行高也是60px；*/
+        line-height: @header--height;
+        /*设置相对定位*/
+        position: relative;
+        /*  a { */
+        .logo {
+            width: @header--width*0.109;
+            display: inline-block;
+            margin-right: @header--height;
+            height: @header--height;
+            float: left;
+            img {
+                float: left;
+                width: @header--width*0.109;
+                margin-top: 10px;
+                border: 0 none;
+            }
+            border: 0 none;
+        }
+        &:hover {
+            border: 0 none;
+        }
+        /*     } */
+        nav {
+            height: @header--height;
+            /*display:inline-block将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格*/
+            display: inline-block;
+            float: left;
+            li {
+                /* position: relative;*/
+                font-size: @header--fontsize;
+                /*作为行内元素，但在元素内部为块级元素*/
+                display: inline-block;
+                /*向右隔开50px*/
+                margin-right: @header--height*5/6;
+                /*鼠标放过来变成手形*/
+                cursor: pointer;
+                height: @header--height;
+                float: left;
+                /*在此父容器中用层级定位*/
+                position: relative;
+                .arrow-icon {
+                    /*导航栏上下箭头*/
+                    width: @arrow-icon--width;
+                    height: @arrow-icon--height;
+                    border-top: @arrow-icon--border;
+                    border-left: @arrow-icon--border;
+                    display: inline-block;
+                    transform: rotate(-135deg);
+                    transform-origin: 4px 4px;
+                    margin-bottom: 2px;
+                }
+                &:hover .arrow-icon {
+                    /*箭头选中以后*/
+                    margin-bottom: -2px;
+                    border-top: @arrow-icon--border--hover;
+                    border-left: @arrow-icon--border--hover;
+                    transform: rotate(45deg);
+                    animation: rotate 1s ease normal;
+                }
+                &:hover {
+                    .submenu {
+                        display: block;
+                        -webkit-animation: myfirst .8s ease normal;
+                        -moz-animation: myfirst .8s ease normal;
+                        animation: myfirst .8s ease normal;
+                        opacity: 1;
+                        /* background: aqua;*/
+                        border: 1px solid;
+                    }
+                }
+            }
+            .submenu {
+                /*设置下拉菜单中的整体样式*/
+                display: none;
+                opacity: 0;
+                position: absolute;
+                z-index: 1000;
+                top: @header--height;
+                left: 0;
+                left: (@header--height/60)*250;
+                background: @submenu--background;
+                font-size: @header--fontsize*12/14;
+                color: @submenu--color;
+                width: @header--width*0.28;
+                a {
+                    /*这里一定要设计为块级元素，为了每个标签独占一行*/
+                    display: block;
+                    height: @header--height*0.5;
+                    line-height: @header--height*0.5;
+                    padding: 0 15px;
+                    &:hover {
+                        color: #35b558;
+                    }
+                }
+                h3 {
+                    margin: 10px 0;
+                    padding: 0 15px;
+                    background: @submenu--background;
+                    height: @header--fontsize*28/14;
+                    line-height: @header--fontsize*28/14;
+                    font-weight: 300;
+                }
+            }
+        }
+        .icon_box {
+            /*登录框的3个图标设置*/
+            float: right;
+            width: @header--width*0.2;
+            height: @header--height;
+            margin-right: 10px;
+            text-align: right;
+            .search-icon {
+                /*头部的搜索图标*/
+                display: inline-block;
+                width: 17px;
+                height: 17px;
+                /*通过背景图来显示*/
+                background: url('http://e.jikexueyuan.com/headerandfooter/images/search-icon.png') 0 0 no-repeat;
+                background-position: 0, 0;
+                background-size: 17px 17px;
+            }
+            .app-icon {
+                /*头部的应用程序下载图标*/
+                /*背景图显示的是平板及手机图标，而非二维码图标*/
+                background: url('http://e.jikexueyuan.com/headerandfooter/images/app-icon.png') 0 0 no-repeat;
+                background-position: 0;
+                background-size: 17px;
+                .top-icon {
+                    right: 50px;
+                }
+                img {
+                    width: 100%;
+                }
+                &:hover {
+                    .submenu {
+                        right: -50px;
+                        right: 10px;
+                        padding: 0;
+                        border: 1px solid black;
+                    }
+                }
+            }
+            .login-icon {
+                /*页头右边的登录图标*/
+                background: url('http://e.jikexueyuan.com/headerandfooter/images/login-icon.png') 0 0 no-repeat;
+                background-position: 0;
+                background-size: 17px;
+            }
+            span {
+                /*这里设置为行内块元素，如何取消的话，因为span为空元素，会消失在页面中，什么都看不见无论你设置什么颜色*/
+                display: inline-block;
+                width: 17px;
+                height: @header--height;
+                margin-left: 25px;
+                cursor: pointer;
+            }
+            .top-icon {
+                /*此处生成显示下拉菜单的上半个三角形，用一个宽高都是15px的带框的正方形偏转45度;注意这loginlist类，它其实是下面一个登录标志的类，但是在这里所有的类写作一起，所有指定的时候就罗列这3个，表示生成下拉菜单的上半部分。*/
+                position: absolute;
+                top: -8px;
+                right: 10px;
+                display: block;
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform: rotate(45deg);
+                border-top: 1px solid #ececec;
+                border-left: 1px solid #ececec;
+                background: #fff;
+            }
+            dd {
+                /*定义登录框下拉菜单中样式列表的格式，覆盖原来header a{}设置的字体等设置*/
+                font-size: 12px;
+                line-height: 35px;
+                margin: 0;
+                padding-left: 10px;
+                text-align: left;
+                vertical-align: middle;
+                a {
+                    /*定义登录框下拉菜单中a标签的格式颜色高度等*/
+                    line-height: 35px;
+                    display: block;
+                    height: 35px;
+                    color: #666;
+                    reg-btn, login-btn {
+                        /*定义登录框下拉菜单中a标签中文字等各种排列大小*/
+                        line-height: 35px;
+                        display: inline-block;
+                        width: 45%;
+                        height: 35px;
+                        padding: 0 10px;
+                        text-align: center;
+                    }
+                }
+                i, #uservip-icon {
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 10px;
+                    /*background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon2.png") 0 0 no-repeat;*/
+                    background: url(../img/allicon2.png) 0 0 no-repeat;
+                    background-size: 64px 64px;
+                }
+                /*通过调整在雪碧图中的相对位置，达到显示图标的目的*/
+                .xxzx-icon {
+                    /*background-position属性设置背景图像的起始位置*/
+                    background-position: -16px -15px;
+                }
+                .grzy-icon {
+                    background-position: -45px -1px;
+                }
+                .xxtz-icon {
+                    background-position: -16px -30px;
+                }
+                .zhsz-icon {
+                    background-position: -30px -1px;
+                }
+                .tc-icon {
+                    background-position: -16px -1px;
+                }
+            }
+        }
+        .search_box {
+            /*此搜索框，初始状态为缩小10倍，且不透明，用绝对定位方式在浮动着最外层；平时不显示出来，只有点击了搜索图标才放大并遮住导航栏目*/
+            line-height: 59px;
+            position: absolute;
+            z-index: 11000;
+            top: 0;
+            right: 0;
+            display: none;
+            width: 850px;
+            height: 59px;
+            transform: scale(.1, 1);
+            opacity: 0;
+            background: #fff;
+            input {
+                font-size: 12px;
+                line-height: 40px;
+                /*空出右边部分给ios、android、html5选择图标摆放*/
+                width: 400px;
+                height: 40px;
+                margin-top: 10px;
+                margin-left: 10px;
+                vertical-align: top;
+            }
+            a {
+                font-size: 12px;
+                margin-left: 10px;
+                padding: 3px 5px;
+                color: #808080;
+                background: #f5f5f5;
+            }
+        }
+    }
+}
+.loginlist .submenu {
+    position: absolute;
+    z-index: 1200;
+    top: 58px;
+    right: -10px;
+    display: none;
+    width: 120px;
+    padding: 10px 0;
+    /*全透明*/
+    opacity: 0;
+    background: #fff;
+    dd {
+        font-size: 12px;
+        line-height: 35px;
+        margin: 0;
+        padding-left: 10px;
+        text-align: left;
+        vertical-align: middle;
+        a {
+            line-height: 35px;
+            display: block;
+            height: 35px;
+            color: #666;
+        }
+        .login-btn {
+            line-height: 35px;
+            display: inline-block;
+            width: 45%;
+            height: 35px;
+            padding: 0 10px;
+            text-align: center;
+        }
+        .reg-btn {
+            line-height: 35px;
+            display: inline-block;
+            width: 45%;
+            height: 35px;
+            padding: 0 10px;
+            text-align: center;
+        }
+        i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+            /*background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon2.png") 0 0 no-repeat;*/
+            background: url(../img/allicon2.png) 0 0 no-repeat;
+            background-size: 64px 64px;
+        }
+    }
+}
+
+/*定义app及登录图标下拉菜单的格式及大小的选中状态，弹出下载的二维码及上三角形。*/
+
+#uservip-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    /*background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon2.png") 0 0 no-repeat;*/
+    background: url(../img/allicon2.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+}
+.loginlist:hover .submenu {
+    display: block;
+    -webkit-animation: listshow .8s ease normal;
+    -moz-animation: listshow .8s ease normal;
+    animation: listshow .8s ease normal;
+    opacity: 1;
+    /*我加上的边框*/
+    border: 1px solid black;
+}
+
+/*设置下拉菜单中的整体样式*/
+
+header nav .submenu {
+    font-size: 12px;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    /*debug*/
+    left: 250px;
+    display: none;
+    width: 280px;
+    opacity: 0;
+    color: #666;
+    background: #fff;
+}
+
+/*定义动画*/
+
+@keyframes scalerun {
+    0% {
+        transform: scale(.1, 1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+
+/*生成初始箭头的样式，用一个长宽都是8px的正方形，显示顶部及左边，然后旋转135度，以后不同角度就是不同旋转角度而已*/
+
+
+/*一定要先创建rotate动画的规则*/
+
+@keyframes rotate {
+    0% {
+        margin-bottom: 2px;
+      
+        transform: rotate(-135deg);
+    }
+    10% {
+        margin-bottom: -2px;
+    }
+    100% {
+       
+        transform: rotate(45deg);
+    }
+}
+
+/*定义app及登录图标下拉菜单的格式及大小的原始状态*/
+
+@keyframes listshow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*定义导航栏下拉菜单，选中时候的显示方式*/
+
+
+/*导航栏弹出菜单的动画效果定义 */
+
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Safari and Chrome */
+/*@-webkit-keyframes myfirst
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/

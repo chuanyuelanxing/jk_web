@@ -1,0 +1,245 @@
+/*参考文章：
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+*/
+
+
+
+@border0--color: red;
+
+/* 定义整个站牌的宽度及高度 */
+
+@sign--width: 939px*0.5;
+@sign--height: 1890px*0.5;
+@sign--bgcolor: white;
+@dirctionBg: yellow; //班车发送方向背景色
+
+/*定义基础ul样式*/
+
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    //    flex-direction: column;
+    // justify-content: space-between; //属性定义了项目在主轴也就是水平方向上的对齐方式,space-between
+    justify-content: space-around;
+}
+li {
+    display: flex;
+    // flex-direction: column;
+    flex-direction: column; //控制其中的span的方向
+    //justify-content:space-around; //定义span的纵向，每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+    justify-content: space-between;
+    //  justify-content:center;
+    align-items: center; //属性定义项目在交叉轴上如何对齐;stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+    > .cur {
+        color: red;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    > div {
+        //   width:15px;
+        //   height:80px;
+        //  font-size: 15px;
+        //   word-wrap: break-word;
+        margin: 0 auto;
+        width: 15px;
+        line-height: 15px;
+        writing-mode: tb-rl; //设置对象书写方向
+        text-align: justify; //设置对象中文本的对齐方式
+    }
+}
+.banner-top span {
+    //   display: flex;
+    //   justify-content: space-between; //属性定义了项目在主轴上的对齐方式,space-between;
+    //   align-items: space-between;
+    //  margin-top: -5px;
+    font-size: 48px;
+    margin-left: 24px;
+}
+.border {
+    /*定义各种边框的样式*/
+    border: 1px;
+    border-color: @border0--color;
+    border-style: solid;
+    display: block;
+}
+.border-size(@w, @h) {
+    /*定义各种边框的宽度及高度*/
+    width: @w;
+    height: @h;
+}
+.dirction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; //属性定义了项目在主轴上的对齐方式,space-between
+    height: @sign--height*0.032;
+}
+.subDirction {
+    display: flex;
+    //  width:@sign--width*0.2;
+}
+.dirctionL {
+    .subDirction;
+    order: 0; //默认值,排列序号
+    flex-grow: 1; //属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+    display: flex;
+    justify-content: center; //水平对齐
+    align-items: center; //属性定义项目在交叉轴上如何对齐
+    color: rgb(253, 253, 253);
+    font-weight: 700;
+    font-size: 22px;
+    width: 75px;
+}
+.dirctionM {
+    .subDirction;
+    order: 1;
+    flex-grow: 5;
+    justify-content: center; //在水平主轴上的对齐方式，右对齐
+    align-items: center; //垂直轴上居中
+    .arrow {
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-right-color: black;
+        margin-top: 22px;
+    }
+}
+.dirctionM div {
+    border: 3px;
+    border-color: black;
+    border-style: none none solid none; //上右下左
+    display: block;
+    width: 212px;
+    margin-bottom: 7px;
+    justify-content: center; //水平对齐
+    align-items: center; //属性定义项目在交叉轴上如何对齐
+    span {
+        display: block;
+        display: flex;
+        justify-content: center; //水平对齐
+        font-size: 17px;
+    }
+}
+.dirctionR {
+    .subDirction;
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.dirctionRUp, .dirctionRDown {
+    display: flex;
+    flex-direction: row;
+    color:darkorange;
+    font-size: 12px;
+    justify-content: flex-end; //在水平主轴上的对齐方式，右对齐
+    align-items: center; //垂直轴上居中
+}
+
+/*定义七个渐变颜色*/
+
+.dirctionStyleOne {
+    /*定义每个车站上部的班车发送方向*/
+    // background: @dirctionBg;
+    background: linear-gradient(to right, #84f348, #fbfff9); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleTwo {
+    background: linear-gradient(to right, #e94e86, #fef5f9); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleThree {
+    background: linear-gradient(to right, #6b7bf0, #f9fafe); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleFour {
+    background: linear-gradient(to right, #d9761d, #fbf0e5); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleFive {
+    background: linear-gradient(to right, #84f348, #f7fef2); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleSix {
+    background: linear-gradient(to right, #e94e86, #fdf2f6); //定义颜色渐变；
+    width: 100%;
+}
+.dirctionStyleSeven {
+    background: linear-gradient(to right, #eb7bf0, #f7f8fe); //定义颜色渐变；
+    width: 100%;
+}
+.bus-lineFlexStyle {
+    display: flex;
+    flex-direction: column; //column：主轴为垂直方向，起点在上沿;column-reverse：主轴为垂直方向，起点在下沿;
+    justify-content: space-between; //属性定义了项目在主轴上的对齐方式,space-between
+    align-items: center; //属性定义项目在交叉轴上如何对齐
+}
+
+/*body使用flexbox布局，而不是普通的块布局。在文档流中的所有子元素（即不是绝对定位的元素）现在都变成了伸缩项目。著作权归作者所有。
+商业转载请联系作者获得授权,非商业转载请注明出处。
+原文: http://www.w3cplus.com/css3/designing-css-layout-with-flexbox.html ©w3cplus.com*/
+
+body {}
+.contain {
+    .border;
+    background: @sign--bgcolor;
+    margin: auto;
+    width: @sign--width;
+    height: @sign--height;
+    .border-size(@sign--width, @sign--height);
+    .bus-lineFlexStyle;
+}
+.banner-top {
+    .border;
+    .border-size(@sign--width, @sign--height*274/1890);
+    display: flex;
+    color: white;
+    background: red;
+    font-weight: 700;
+    font-size: 28px;
+    justify-content: center; //水平中间
+    align-items: center; //垂直中间
+}
+.bus-line {
+    //  .border;
+    .border-size(@sign--width*0.9, @sign--height*196/1890);
+    ;
+}
+.banner-bottom {
+    .border;
+    .border-size(@sign--width, @sign--height*233/1890);
+    diplay:flex;
+     flex-direction: column;
+}
+.dirctionAd{
+	.dirction;
+	background:red;
+}
+.adUp,.adDown{
+   display: flex;
+    flex-direction: row;
+    color: blue;
+ 
+    justify-content:space-around; //在水平主轴上的对齐方式，右对齐
+    align-items: center; //垂直轴上居space-between中
+    background:lightyellow;	
+}
+.adUp div{
+	   font-size: 48px;
+	   font-weight: bold;
+	 font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "楷书";
+
+	   color:red;
+}
+.adDown div{
+	 font-size: 18px;
+	   color:black;
+}
