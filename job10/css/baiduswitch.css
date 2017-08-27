@@ -1,0 +1,1109 @@
+ /*百度基本样式设置*/
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    blockquote,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    pre,
+    form,
+    fieldset,
+    legend,
+    button,
+    input,
+    textarea,
+    th,
+    td {
+        margin: 0;
+        padding: 0
+    }
+    
+    body {
+        padding: 0;
+        margin: 0
+    }
+    
+    html {
+        color: #000;
+        overflow-y: scroll;
+        overflow: -moz-scrollbars
+    }
+    
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font: 12px arial
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 100%
+    }
+    
+    em {
+        font-style: normal
+    }
+    
+    small {
+        font-size: 12px
+    }
+    
+    ul,
+    ol {
+        list-style: none
+    }
+    
+    a {
+        text-decoration: none
+    }
+    
+    a:hover {
+        text-decoration: underline
+    }
+    
+    legend {
+        color: #000
+    }
+    
+    fieldset,
+    img {
+        border: 0
+    }
+    
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+    
+    img {
+        -ms-interpolation-mode: bicubic
+    }
+    
+    textarea {
+        resize: vertical
+    }
+    
+    .left {
+        float: left
+    }
+    
+    .right {
+        float: right
+    }
+    
+    .overflow {
+        overflow: hidden
+    }
+    
+    .hide {
+        display: none
+    }
+    
+    .block {
+        display: block
+    }
+    
+    .inline {
+        display: inline
+    }
+    
+    .error {
+        color: #F00;
+        font-size: 12px
+    }
+    
+    label,
+    button {
+        cursor: pointer
+    }
+    
+    .clearfix:after {
+        content: '\20';
+        display: block;
+        height: 0;
+        clear: both
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+    
+    .clear {
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        visibility: hidden;
+        overflow: hidden
+    }
+    
+    .wordwrap {
+        word-break: break-all;
+        word-wrap: break-word
+    }
+    
+    .s-yahei {
+        font-family: arial, 'Microsoft Yahei', '微软雅黑'
+    }
+    
+    pre.wordwrap {
+        white-space: pre-wrap
+    }
+    
+    body {
+        /*设置默认为文字居中*/
+        text-align: center
+    }
+    
+    body,
+    form {
+        position: relative;
+        z-index: 0
+    }
+    
+    td {
+        text-align: left
+    }
+    
+    img {
+        border: 0
+    }
+    /*页面body样式设置*/
+    
+    .s-manhattan-index .bd_bear_home_show,
+    .s-manhattan-index .s-skin-hasbg .bd_bear_home_show {
+        margin-right: 0
+    }
+    /*body下第一层div*/
+    
+    #wrapper {
+        height: 100%;
+    }
+    /*body下第二层div，#wraper下第一层*/
+    
+    #head {
+        cursor: default;
+        height: 100%;
+        min-height: 768px;
+        position: relative;
+        width: 100%;
+    }
+    /*头部导航条，整体部分，绝对定位99，拓展的话可以再者一层继续*/
+    
+    #s_top_wrap {
+        position: absolute;
+        z-index: 99;
+        min-width: 1000px;
+        width: 100%
+    }
+    /*设置高度及底部线条*/
+    
+    .s-top-wrap {
+        width: 100%;
+        height: 32px;
+        border-bottom: 1px solid #ebebeb
+    }
+    /*导航条左边栏目块设置*/
+    
+    .s-upfunc-menus {
+        height: 32px;
+        left: 0;
+        padding-right: 15px;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .s-upfunc-menus .s-icons {
+        float: left;
+        _display: inline;
+    }
+    
+    .s-upfunc-menus .s-icons a {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 19px;
+        color: #555;
+        text-decoration: underline;
+        outline: none;
+        display: inline-block;
+        text-shadow: none;
+    }
+    /*导航栏右边部分设置*/
+    
+    #u_sp {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        width: 590px;
+        font-size: 13px;
+        text-align: right;
+        color: #999
+    }
+    
+    .s-sp-menu a {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 19px;
+        color: #555;
+        text-decoration: underline;
+        outline: none;
+        display: inline-block;
+        text-shadow: none
+    }
+    
+    .s-sp-menu a.last {
+        margin-right: 0
+    }
+    
+    .s-sp-menu a:hover {
+        text-decoration: underline
+    }
+    
+    .s-sp-menu .mnav {
+        font-weight: bold
+    }
+    /*设置右边导航栏用户登录样式设置*/
+    
+    .s-user-set-menu {
+        float: right;
+        padding-top: 6px;
+        position: absolute;
+        right: 75px;
+        text-align: left;
+        top: 26px;
+        width: 100px;
+        z-index: 999;
+    }
+    /* 弹出用户登录菜单的样式 */
+    
+    .s-user-set-menu {
+        float: right;
+        padding-top: 6px;
+        position: absolute;
+        right: 75px;
+        text-align: left;
+        top: 26px;
+        width: 100px;
+        z-index: 999;
+    }
+    
+    .s-user-set-menu.menu-top {
+        width: 70px;
+    }
+    
+    .s-user-set-menu div {
+        border: 1px solid #e3e3e3;
+        box-shadow: 1px 1px 5px #d1d1d1;
+        position: relative;
+    }
+    /*弹出菜单上的三角形*/
+    
+    .s-user-set-menu .menu-arrow {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: transparent transparent #e3e3e3;
+        border-image: none;
+        border-style: dashed dashed solid;
+        border-width: 5px;
+        display: inline-block;
+        font-size: 0;
+        height: 0;
+        left: 28px;
+        line-height: 0;
+        position: absolute;
+        top: -4px;
+        width: 0;
+        z-index: 2;
+    }
+    
+    .s-user-set-menu.menu-top .menu-arrow {
+        float: right;
+        right: 32px;
+    }
+    
+    .s-user-set-menu .menu-arrow em {
+        border-color: transparent transparent #fff;
+        border-style: dashed dashed solid;
+        border-width: 5px;
+        color: #666;
+        display: block;
+        font-size: 0;
+        height: 0;
+        left: -5px;
+        line-height: 0;
+        position: absolute;
+        top: -4px;
+        width: 0;
+    }
+    /*a标签设置*/
+    
+    .s-sp-menu a {
+        color: #555;
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 19px;
+        outline: medium none;
+        position: relative;
+        text-decoration: underline;
+        text-shadow: none;
+    }
+    
+    .s-user-set-menu a {
+        /*用户登录及高级搜索的下拉菜单样式*/
+        -moz-user-select: none;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+        display: block;
+        font-size: 12px;
+        height: 25px;
+        line-height: 25px;
+        margin: 0;
+        padding-left: 8px;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .s-user-set-menu div a {}
+    
+    #s_user_name_menu.s-user-set-menu a,
+    #s_user_setting_menu.s-user-set-menu a {
+        color: #000;
+        text-shadow: none;
+        /*add*/
+        margin-left: 7px;
+    }
+    
+    .s-user-setting-top .setting-text {
+        text-decoration: underline;
+        display: inline-block;
+    }
+    /*导航栏右边更多产品设置a标签*/
+    
+    .s-sp-menu a {
+        position: relative;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 19px;
+        color: #555;
+        text-decoration: underline;
+        outline: none;
+        display: inline-block;
+        text-shadow: none;
+    }
+    
+    #u_sp .s-user-name-top,
+    #u_sp .s-user-setting-top,
+    #u_sp .s_bri {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+        height: 32px;
+        line-height: 32px;
+    }
+    
+    #u_sp .s_bri {
+        width: 86px;
+        height: 32px;
+        line-height: 32px;
+        color: white;
+        background: #38f;
+        background: #398bfb;
+        font-size: 13px;
+        text-align: center;
+        overflow: hidden;
+        border-bottom: 1px solid #398bfb;
+        text-decoration: none;
+    }
+    /*右边弹出图文菜单hover状态设置*/
+    
+    #u_sp .s_bdbri {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        width: 85px;
+        min-height: 100px;
+        border-left: 1px solid #e7e7e7;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        text-shadow: none;
+    }
+    
+    #u_sp .s_bdbriimgtitle {
+        color: #333;
+        text-align: center;
+        width: 66px;
+        height: 30px;
+        line-height: 34px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        border-bottom: #f0f0f0 1px solid;
+        font-size: 13px;
+        cursor: default;
+    }
+    
+    #u_sp .s_briscrollwrapperContainer {
+        position: relative;
+    }
+    
+    #u_sp .s_briscrollwrapper {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #u_sp .s_bdbriwrapper a {
+        display: block;
+        text-align: center;
+        width: 66px;
+        height: 76px;
+        margin: 0 auto;
+        font-size: 12px;
+        border-bottom: #f0f0f0 1px solid;
+        color: #666;
+        text-decoration: none;
+        overflow: hidden;
+        text-shadow: none;
+        line-height: 14px;
+    }
+    
+    #u_sp .s_bdbriwrapper a img {
+        display: block;
+        height: 36px;
+        width: auto;
+        margin: 10px auto 5px;
+        cursor: pointer;
+    }
+    
+    img {
+        border: 0;
+    }
+    
+    #u_sp .s_bdbriwrapper .s_bdbrievenmore {
+        margin-top: 15px;
+        height: 30px;
+        width: 85px;
+        overflow: hidden;
+    }
+    /*弹出菜单底部全部产品*/
+    
+    #u_sp .s_bdbriwrapper .s_bdbrievenmore {
+        margin-top: 15px;
+        height: 30px;
+        width: 85px;
+        overflow: hidden;
+    }
+    /*清除浮动*/
+    
+    .clear {
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    /*主体内容样式设置*/
+    
+    #head_wrapper {
+        position: relative;
+        height: 38.2%;
+        min-height: 293px;
+        width: 1000px;
+        margin: 0 auto;
+        _height: 293px;
+    }
+    /*设置form样式*/
+    
+    .s_form {
+        width: 641px;
+        height: 100%;
+        min-height: 293px;
+        margin: 0 auto 0 auto;
+        text-align: left;
+        z-index: 100;
+        /*  background: lightyellow;*/
+    }
+    
+    .s_form_wrapper {
+        height: 100%;
+    }
+    /*大的logo设置*/
+    
+    #head_wrapper .s-p-top {
+        height: 61.8%;
+        min-height: 181px;
+        position: relative;
+        z-index: 0;
+        text-align: center;
+    }
+    
+    #s_lg_img {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -135px;
+    }
+    
+    #s_lg_img {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -135px;
+    }
+    /*form设置*/
+    
+    body,
+    form {
+        position: relative;
+        z-index: 0;
+    }
+    
+    #form {
+        z-index: 1;
+    }
+    
+    #head_wrapper.s-down .s_btn_wr,
+    .s_ipt_wr,
+    .s_btn_wr {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    
+    .soutu-env-newindex .quickdelete-wrap {
+        position: relative;
+    }
+    /*设置百度一下按钮*/
+    /*设置按钮背景*/
+    
+    #head_wrapper.s-down .s_btn_wr,
+    .s_ipt_wr,
+    .s_btn_wr {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    
+    #head_wrapper.s-down .s_btn_wr,
+    .s_btn_wr {
+        width: 102px;
+        height: 38px;
+        border: 1px solid #38f;
+        border-bottom: 1px solid #2e7ae5;
+        background-color: #38f;
+    }
+    /*搜索内容输入栏*/
+    
+    #head_wrapper.s-down .s_btn_wr,
+    .s_ipt_wr,
+    .s_btn_wr {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    
+    .soutu-env-newindex .quickdelete-wrap {
+        position: relative;
+    }
+    /*搜索内容框设置*/
+    
+    #head_wrapper.s-down #kw,
+    #kw {
+        width: 521px;
+        height: 20px;
+        padding: 9px 7px;
+        font: 16px arial;
+        border: 1px solid #b8b8b8;
+        border-bottom: 1px solid #ccc;
+        border-right: 0;
+        vertical-align: top;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    #kw {
+        margin: 0;
+    }
+    
+    .soutu-env-newindex #kw {
+        width: 450px!important;
+        padding-right: 79px!important;
+    }
+    
+    .soutu-env-newindex.soutu-env-nomac #kw {
+        width: 480px!important;
+        width: 478px!important;
+        padding-right: 48px!important;
+    }
+    /*图片搜索logo样式*/
+    
+    .soutu-btn {
+        z-index: 1;
+        position: absolute;
+        right: 11px;
+        top: 50%;
+        margin-top: -8px;
+        height: 16px;
+        width: 18px;
+        background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png?__sprite) no-repeat;
+        background-image: -webkit-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png?__sprite) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+        background-image: -moz-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png?__sprite) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+        background-image: -o-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png?__sprite) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+        background-image: -ms-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png?__sprite) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png?__sprite) 2x);
+        cursor: pointer;
+    }
+    /*设置按钮本身*/
+    
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%;
+    }
+    
+    #nv a,
+    #nv b,
+    .btn,
+    #lk {
+        font-size: 14px;
+    }
+    
+    .btn {
+        color: white;
+        background-color: #38f;
+        width: 102px;
+        height: 38px;
+        font-size: 16px;
+        border: 0;
+    }
+    
+    #head_wrapper.s-down .btn,
+    .s-title-img .btn {
+        cursor: pointer;
+        width: 102px;
+        height: 38px;
+        line-height: 38px;
+        padding: 0;
+        border: 0;
+        background: none;
+        background-color: #38f;
+        font-size: 16px;
+        color: white;
+        box-shadow: none;
+        font-weight: normal;
+    }
+    /*个人偏好导航内容*/
+    
+    #s_wrap {
+        position: relative;
+        z-index: 0;
+        min-width: 1000px;
+    }
+    
+    #s_wrap {
+        width: 100%;
+        _width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    /*个人偏好导航第二层：包含初次显示及加载显示两大块*/
+    
+    .main {
+        display: none;
+    }
+    
+    #s_main {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 895px;
+    }
+    
+    #s_main {
+        position: relative;
+    }
+    
+    .clearfix {
+        zoom: 1;
+    }
+    /*初次显示模块*/
+    
+    .s-mancacrd-main {
+        position: relative;
+        z-index: 2;
+    }
+    /*初次显示模块>导航条*/
+    
+    .s-menu-gurd,
+    .s-menu-container {
+        width: 100%;
+        min-height: 35px;
+        _height: 35px;
+        /*background: lightgreen;*/
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置*/
+    
+    .s-ctner-menus {
+        position: relative;
+        z-index: 11111;
+        width: 893px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 14px;
+        border-top: 1px solid #e9e9e9;
+        border-right: 1px solid #e9e9e9;
+        border-left: 1px solid #e9e9e9;
+        height: 39px;
+        line-height: 39px;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>我的关注*/
+    
+    .main a,
+    .main span {
+        outline: none;
+    }
+    
+    .s-ctner-menus .s-menu-item {
+        color: #333;
+        width: 80px;
+        height: 39px;
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .s-menu-gurd .s-ctner-menus .s-menu-mine {
+        float: left;
+        text-align: left;
+        width: 124px;
+    }
+    
+    .s-menu-gurd .s-ctner-menus .s-menu-mine,
+    .s-ctner-menus .s-menu-mine .mine-icon,
+    .s-ctner-menus .s-menu-mine .mine-text {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>我的关注>logo*/
+    
+    .s-menu-gurd .s-ctner-menus .s-menu-mine,
+    .s-ctner-menus .s-menu-mine .mine-icon,
+    .s-ctner-menus .s-menu-mine .mine-text {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    
+    .s-ctner-menus .s-menu-mine .mine-icon {
+        margin: 11px 0 0 20px;
+        width: 20px;
+        height: 18px;
+        background: url("./img/card_setts_fdb17359.png?__sprite") no-repeat -15px 0;
+        _background: url("./img/card_setts_ie_57e87032.png?__sprite") no-repeat -15px 0;
+    }
+    /*我的关注文字块设置*/
+    
+    .s-menu-gurd .s-ctner-menus .s-menu-mine,
+    .s-ctner-menus .s-menu-mine .mine-icon,
+    .s-ctner-menus .s-menu-mine .mine-text {
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+    }
+    
+    .s-ctner-menus .s-menu-mine .mine-text {
+        height: 100%;
+        margin-left: 3px;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>具体导航条的内容*/
+    
+    .s-ctner-menus .s-menus-outer {
+        float: left;
+        display: -webkit-flex;
+        -webkit-flex-flow: row wrap;
+        -webkit-align-items: stretch;
+        display: -moz-flex;
+        -moz-flex-flow: row wrap;
+        -moz-align-items: stretch;
+        display: -ms-flexbox;
+        -ms-flex-flow: row wrap;
+        -ms-align-items: stretch;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        width: 719px;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>具体导航条的内容>左边具体内容块*/
+    
+    .s-ctner-menus .menus-wrapper,
+    .s-ctner-menus .s-menu-setting {
+        display: inline-block;
+        zoom: 1;
+        float: left;
+        vertical-align: top;
+        height: 100%;
+    }
+    
+    .s-ctner-menus .s-menus-outer .menus-wrapper {
+        width: auto;
+    }
+    /*导航、小说*/
+    
+    .main a,
+    .main span {
+        outline: none;
+    }
+    
+    .s-ctner-menus .s-menu-item {
+        color: #333;
+        width: 80px;
+        height: 39px;
+        display: inline-block;
+        zoom: 1;
+        vertical-align: top;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .s-ctner-menus .s-menu-item:hover {
+        margin-top: -1px;
+        margin-bottom: -1px;
+        border-top: 1px solid #b3b6bb;
+        border-bottom: 1px solid #b3b6bb;
+    }
+    
+    .s-ctner-menus .s-menu-item:hover {
+        background-color: #b3b6bb !important;
+        color: #fff;
+        background-image: none !important;
+        filter: none !important;
+    }
+    /*视频*/
+    
+    .s-ctner-menus .current,
+    .s-ctner-menus .current:hover {
+        margin-bottom: -1px;
+        margin-top: -1px;
+        border-top: 1px solid #9a9da2;
+        border-bottom: 1px solid #9a9da2;
+    }
+    
+    .s-ctner-menus .current,
+    .s-ctner-menus .current:hover {
+        _position: relative;
+        background-color: #9a9da2 !important;
+        color: #fff;
+        font-weight: bold;
+        background-image: none !important;
+        filter: none !important;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>具体导航条的内容>中间空白块*/
+    
+    .s-ctner-menus .s-menus-outer .s-bg-space {
+        -webkit-flex: auto;
+        -moz-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        height: 38px;
+    }
+    /*.......>设置*/
+    
+    .s-ctner-menus .menus-wrapper,
+    .s-ctner-menus .s-menu-setting {
+        display: inline-block;
+        zoom: 1;
+        float: left;
+        vertical-align: top;
+        height: 100%;
+    }
+    
+    .s-ctner-menus .s-menu-setting {
+        float: right;
+        width: 18px;
+        padding: 0 21px 0 11px;
+        cursor: pointer;
+    }
+    
+    .s-ctner-menus .s-menu-setting {
+        height: 39px;
+    }
+    
+    .s-ctner-menus .menu-icon {
+        width: 100%;
+        height: 18px;
+        margin-top: 11px;
+        overflow: hidden;
+        background: url("./img/card_setts_fdb17359.png?__sprite") no-repeat -121px -49px;
+        _background: url("./img/card_setts_ie_57e87032.png?__sprite") no-repeat -121px -49px;
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>订阅内容层*/
+    
+    .s-ctner-contents {
+        width: 893px;
+        min-height: 363px;
+        _height: 363px;
+        _overflow: visible;
+        border: 1px solid #e9e9e9;
+        /*background: lightgreen;*/
+    }
+    /*初次显示模块>导航条>包裹层>具体内容层设置>订阅内容层个性化导航内容*/
+    /*页脚底部设置*/
+    
+    .s-bottom-ctner {
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        bottom: 12px;
+        left: 0;
+        overflow: hidden;
+        color: #999;
+        zoom: 1;
+        margin: 0;
+    }
+    
+    #s_wrap .s-bottom-ctner {
+        position: static;
+        margin: 23px auto 12px;
+    }
+    /*设置文字*/
+    
+    #bottom_container .no-qrcode-layer .lh {
+        display: inline;
+    }
+    /*设为首页*/
+    
+    .s-bottom-ctner a {
+        font-size: 12px;
+        text-decoration: underline;
+        color: #999;
+    }
+    
+    .s-bottom-ctner .sethome {
+        margin-right: 12px;
+    }
+    /*版权声明*/
+    
+    .s-bottom-ctner a {
+        font-size: 12px;
+        text-decoration: underline;
+        color: #999;
+    }
+    
+    .s-bottom-ctner img {
+        position: relative;
+        margin: 0 0 -2px 0;
+    }
+    /*公安备案*/
+    
+    .recordcode {
+        padding-top: 6px;
+        height: 16px;
+        line-height: 16px;
+    }
+    
+    .s-bottom-ctner a {
+        font-size: 12px;
+        text-decoration: underline;
+        color: #999;
+    }
+    
+    .recordcode a {
+        text-decoration: none;
+    }
+    
+    .recordcode a i {
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        margin-right: 6px;
+        background: url("./img/icon-police.png?__sprite") 0 0 no-repeat;
+        vertical-align: middle;
+        margin-top: -4px;
+    }
+    /*goto的样式设置*/
+    
+    .s-mancacrd-main .top-feed {
+        visibility: hidden;
+        position: fixed;
+        _position: absolute;
+        left: 50%;
+        margin-left: 447px;
+        width: 51px;
+        bottom: 30px;
+        _top: 200px;
+        _bottom: auto;
+    }
+    
+    .s-mancacrd-main .top-feed .icon-mask {
+        display: none;
+        display: block;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        height: 38px;
+        line-height: 38px;
+        width: 38px;
+        z-index: 3;
+        z-index: 3333;
+        font-size: 13px;
+        background-color: #eee;
+        color: #999;
+        margin-left: -1px;
+        margin-top: -1px;
+        border: 1px solid #e3e3e3;
+        cursor: pointer;
+    }
+    
+    .s-mancacrd-main .icon-mask .text {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        line-height: 16px;
+        width: 30px;
+        z-index: 99999;
+        cursor: pointer
+    }
+    
+    .s-mancacrd-main .top-feed .to-top span {
+        display: block;
+        height: 17px;
+        width: 33px;
+        margin: 0 auto;
+       /* background: url("./img/topfed_c531aae6.png") no-repeat -1px -10px;
+        _background: url("./img/topfed_ie_a6a8d214.png") no-repeat -1px -10px;*/
+    }
