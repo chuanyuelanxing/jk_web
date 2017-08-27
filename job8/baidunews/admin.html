@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>baidu后台管理</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- bootstrap导航条组件 -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <!-- 下面的botton为页面缩小后，右上角的省略标志 -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">百度新闻管理后台</a>
+                </div <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">首页</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- 引入栅格系统，在中等模式下左右平分，小模式小全部占领 -->
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <!-- 面板组件 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻编辑</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻标题</label>
+                                <input type="text" class="form-control" id="newstitle" placeholder="请输入新闻标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻类型</label>
+                                <select class="form-control" id="newstype">
+                                    <option>精选</option>
+                                    <option>百家</option>
+                                    <option>本地</option>
+                                    <option>图片</option>
+                                    <option>娱乐</option>
+                                    <option>社会</option>
+                                    <option>军事</option>
+                                    <option>女人</option>
+                                    <option>搞笑</option>
+                                    <option>互联网</option>
+                                    <option>更多</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻图片</label>
+                                <input type="text" class="form-control" id="newsimg" placeholder="请输入新闻图片路径">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻时间</label>
+                                <input type="date" class="form-control" id="newstime" placeholder="请输入新闻时间">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻来源</label>
+                                <input type="text" class="form-control" id="newssrc" placeholder="请输入新闻来源">
+                            </div>
+                            <button class="btn btn-primary" id="btnsubmit">提交新闻</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <!-- 新闻样式 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻列表</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table" id="newstable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>类型</th>
+                                    <th>新闻标题</th>
+                                    <th>图片地址</th>
+                                    <th>新闻来源</th>
+                                    <th>新闻时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--  <tr>
+                                <td>001</td>
+                                <td>百家</td>
+                                <td>标题1212</td>
+                                <td>地址1212</td>
+                                <td>来源1212</td>
+                                <td>时间1212</td>
+                                <td>
+                                    <button class="btn btn-primary btn-xs">编辑</button>
+                                    <button class="btn btn-danger btn-xs">删除</button>
+                                </td>
+                            </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 删除Modal bootstrap的js中的模态框 -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">警告</h4>
+                </div>
+                <div class="modal-body">
+                    删除无法恢复！
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirmDelete">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 编辑Modal bootstrap的js中的模态框 -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新闻编辑区域</h4>
+                </div>
+                <div class="modal-body">
+                <!-- 把新闻输入的form表单，放入模拟框，但是甩掉原来的输入按钮，利用模拟框的两个按钮 -->
+                     <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻标题</label>
+                                <input type="text" class="form-control" id="unewstitle" placeholder="请输入新闻标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻类型</label>
+                                <select class="form-control" id="unewstype">
+                                    <option>精选</option>
+                                    <option>百家</option>
+                                    <option>本地</option>
+                                    <option>图片</option>
+                                    <option>娱乐</option>
+                                    <option>社会</option>
+                                    <option>军事</option>
+                                    <option>女人</option>
+                                    <option>搞笑</option>
+                                    <option>互联网</option>
+                                    <option>更多</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻图片</label>
+                                <input type="text" class="form-control" id="unewsimg" placeholder="请输入新闻图片路径">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻时间</label>
+                                <input type="date" class="form-control" id="unewstime" placeholder="请输入新闻时间">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻来源</label>
+                                <input type="text" class="form-control" id="unewssrc" placeholder="请输入新闻来源">
+                            </div>
+                         
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirmUpdate">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.1.2/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/admin.js"></script>
+</body>
+
+</html>

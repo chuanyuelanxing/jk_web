@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度新闻手机版</title>
+    <!-- 视口（viewport）设置 meta 属性为 user-scalable=no 可以禁用其缩放（zooming）功能 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/nomalize.css">
+    <!-- 引入iconfont字体    -->
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/baidunews.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <a href="#"><i class="icon iconfont icon-baidu"></i></a>
+            <a href="#"><i class="icon iconfont icon-yonghu"></i></a>
+            <a href="#"><i class="icon iconfont icon-search"></i></a>
+            <a href="#"><i class="icon iconfont icon-jiahao"></i></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">精选</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">图片</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">搞笑</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <article class="news-main">
+            <ul>
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/1.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>东风21D导弹,对付航母的杀手锏武器！美国无法防范！</h1>
+                        <p>
+                            <span class="newstime">2016年12月21日</span>
+                            <span class="newsscr">凤凰网</span>
+                        </p>
+                    </div>
+                </li>
+              <!--   <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/2.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>斯琴格热庆生，好友到场！</h1>
+                        <p>
+                            <span class="newstime">2016年12月21日</span>
+                            <span class="newsscr">凤凰网</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/3.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>中国飞行员头盔SHOOT IT回击美军挑衅</h1>
+                        <p>
+                            <span class="newstime">2016年12月21日</span>
+                            <span class="newsscr">多维网</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/4.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>台官方列七大点 说明中美台关系</h1>
+                        <p>
+                            <span class="newstime">2016年12月21日</span>
+                            <span class="newsscr">多维网</span>
+                        </p>
+                    </div>
+                </li> -->
+               
+            </ul>
+        </article>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script type="text/javascript">
+    // 控制导航栏每一行列的多少
+    $(document).ready(function() {
+        var deviceWidth = $("body").width();
+        // index是索引号，item具体索引项目
+        $("nav li").each(function(index, item) {
+            // 以空格来分割标题，如果标题字数大于2
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3); //如果宽了超过两个字就占两个单元格
+
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+
+        });
+    });
+    </script>
+    <script type="text/javascript" src="js/news.js"></script>
+</body>
+
+</html>
