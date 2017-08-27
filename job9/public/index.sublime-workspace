@@ -1,0 +1,2037 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"col",
+				"console"
+			],
+			[
+				"film",
+				"film_date"
+			],
+			[
+				"fil",
+				"film_time"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"re",
+				"ready	$(document).ready"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"adds",
+				"addslashes"
+			],
+			[
+				"ref",
+				"refreshInputNews"
+			],
+			[
+				"new",
+				"newsimg"
+			],
+			[
+				"e",
+				"each	.each()"
+			],
+			[
+				"news",
+				"newstitle"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"pr",
+				"prevAll	.prevAll()"
+			],
+			[
+				"pa",
+				"parent	.parent()"
+			],
+			[
+				"jso",
+				"jsonNews"
+			],
+			[
+				"n",
+				"newstable"
+			],
+			[
+				"ap",
+				"append	.append()"
+			],
+			[
+				"ea",
+				"each	$.each()"
+			],
+			[
+				"se",
+				"senddata"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysq",
+				"mysql_query"
+			],
+			[
+				"mysqli_quer",
+				"mysqli_master_query"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"newsscr",
+				"newssrc"
+			],
+			[
+				"dat",
+				"data	.data()"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"pre",
+				"prependTo	.prependTo()"
+			],
+			[
+				"li",
+				"list"
+			],
+			[
+				"r",
+				"ready	$(document).ready"
+			],
+			[
+				"app",
+				"appendTo	.appendTo()"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"css",
+				"css	.css() - multiple"
+			],
+			[
+				"mo",
+				"mouseleave	.mouseleave()"
+			],
+			[
+				"mouseo",
+				"mousemove	.mousemove()"
+			],
+			[
+				"cour",
+				"cursor"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"hov",
+				"hover"
+			],
+			[
+				"chi",
+				"children	.children()"
+			],
+			[
+				"cli",
+				"click	.click()"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"bt",
+				"btn2"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"ha",
+				"hasClass	.hasClass()"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"f",
+				"focus	.focus()"
+			],
+			[
+				"sl",
+				"slideDown	.slideDown()"
+			],
+			[
+				"fade",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"ho",
+				"hover"
+			],
+			[
+				"less",
+				"lessonimg"
+			],
+			[
+				"ch",
+				"children	.children()"
+			],
+			[
+				"s",
+				"select	.select()"
+			],
+			[
+				"fi",
+				"first	.first()"
+			],
+			[
+				"hi",
+				"hide"
+			],
+			[
+				"rea",
+				"ready	$(document).ready"
+			],
+			[
+				"goto",
+				"gototop"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"cou",
+				"course_jk.css"
+			],
+			[
+				"i",
+				"img"
+			],
+			[
+				"get",
+				"get	.get()"
+			],
+			[
+				"res",
+				"resize	.resize()"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"func",
+				"function〔keyword〕"
+			],
+			[
+				"onres",
+				"onresize〔function〕"
+			],
+			[
+				"img",
+				"imgLocation"
+			],
+			[
+				"att",
+				"attr"
+			],
+			[
+				"at",
+				"attr	.attr() - single"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"scr",
+				"scrollside"
+			],
+			[
+				"sc",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"he",
+				"height	.height()"
+			],
+			[
+				"minbox",
+				"minboxIndex"
+			],
+			[
+				"h",
+				"height	.height()"
+			],
+			[
+				"ind",
+				"index〔argument〕"
+			],
+			[
+				"mi",
+				"minboxHeight"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"box",
+				"boxArr"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"ty",
+				"type"
+			],
+			[
+				"会员系统",
+				"会员系统每日充值额"
+			],
+			[
+				"oP",
+				"oPin"
+			],
+			[
+				"sea",
+				"ser_tab"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"magin",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"blu",
+				"blue"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"tab",
+				"table	Tag"
+			],
+			[
+				"宜春",
+				"宜春天气下雨"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"char",
+				"char_pro〔function〕"
+			],
+			[
+				"cal",
+				"cal_num[1"
+			],
+			[
+				"to",
+				"tozero"
+			],
+			[
+				"num_",
+				"num_Negate"
+			],
+			[
+				"conso",
+				"console"
+			],
+			[
+				"log",
+				"logM"
+			],
+			[
+				"num",
+				"num_sqr"
+			],
+			[
+				"mem",
+				"mem01"
+			],
+			[
+				"on",
+				"onHelp"
+			],
+			[
+				"fe",
+				"featu_zap"
+			],
+			[
+				"fea",
+				"featu_zap"
+			],
+			[
+				"featu_za",
+				"featu_zap_scr"
+			],
+			[
+				"featu_z",
+				"featu_zap"
+			],
+			[
+				"off",
+				"offHelp"
+			],
+			[
+				"me",
+				"mem01"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"k",
+				"keydown	.keydown()"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/xampp/htdocs/jmticket/ticket.html",
+			"settings":
+			{
+				"buffer_size": 7202,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/jmticket/js/ticket.js",
+			"settings":
+			{
+				"buffer_size": 7394,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/jmticket/css/ticket.css",
+			"settings":
+			{
+				"buffer_size": 84,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/MvcSeat20161229/ticket_n7.php",
+			"settings":
+			{
+				"buffer_size": 17412,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/MvcSeat20161229/comm/one_hall.php",
+			"settings":
+			{
+				"buffer_size": 13093,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/jmticket/server/getfilmarrange.php",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// 打开后台页面的时候，自动刷新后台数据\n$(document).ready(function() {\n    // 初始化，调用后台数据库新闻\n    var $newsTable = $('#newstable tbody');\n    var $type=\"all\";\n    refreshNews($type);\n    //添加新闻\n    $('#btnsubmit').click(function(event) {\n\n        event.preventDefault();\n        // 判断admin.html输入是否为空\n        if ($('#newstitle').val() === \"\" || $('#newstype').val() === \"\" || $('#newsimg').val() === \"\" || $('#newstime').val() === \"\" || $('#newssrc').val() === \"\") {\n            // 如果新闻标题输入为空，则在父元素上加bootstrap的has-error错误提示类\n            if ($('#newstitle').val() === \"\") {\n                $('#newstitle').parent().addClass('has-error');\n            } else {\n                $('#newstitle').parent().removeClass('has-error');\n            };\n            if ($('#newstype').val() === \"\") {\n                $('#newstype').parent().addClass('has-error');\n            } else {\n                $('#newstype').parent().removeClass('has-error');\n            };\n            if ($('#newsimg').val() === \"\") {\n                $('#newsimg').parent().addClass('has-error');\n            } else {\n                $('#newsimg').parent().removeClass('has-error');\n            };\n            if ($('#newstime').val() === \"\") {\n                $('#newstime').parent().addClass('has-error');\n            } else {\n                $('#newstime').parent().removeClass('has-error');\n            };\n            if ($('#newssrc').val() === \"\") {\n                $('#newssrc').parent().addClass('has-error');\n            } else {\n                $('#newssrc').parent().removeClass('has-error');\n            };\n        } else {\n            // 如果输入不为空则递交\n            var $jsonNews = {\n                'newstitle': $('#newstitle').val(),\n                'newstype': $('#newstype').val(),\n                'newsimg': $('#newsimg').val(),\n                'newstime': $('#newstime').val(),\n                'newssrc': $('#newssrc').val()\n            };\n            console.log($jsonNews);\n            $.ajax({\n                url: 'server/insert.php',\n                type: 'POST',\n                dataType: 'json',\n                data: $jsonNews,\n                success: function(data) {\n                    console.log(data);\n                    //递交新闻后，清空输入框\n                     refreshInputNews();\n                    // 递交新闻成功后，刷新页面\n                    refreshNews($type);\n\n                }\n            });\n\n        };\n    });\n\n    //删除新闻\n    var deleteID = null;\n    $newsTable.on('click', '.btn-danger', function(event) { //用生成的类来判断一系列按钮，是否按下\n        console.log('click delete');\n        //这里用的是bootstrap的modal方法，参考：Bootstrap 模态框（Modal）插件\n        $('#deleteModal').modal('show');\n        // 获取新闻的id号，prevAll() 获得当前匹配元素集合中每个元素的前面的同胞元素,父元素就是td\n        // console.log($(this).parent().prevAll().eq(5).html());\n        deleteID = $(this).parent().prevAll().eq(5).html();\n        console.log('deleteID=' + deleteID);\n    });\n    $('#deleteModal #confirmDelete').click(function(event) {\n        if (deleteID) {\n            $.ajax({\n                url: 'server/delete.php',\n                type: 'POST',\n                dataType: 'json',\n                data: { newsid: deleteID },\n                success: function(data) {\n                    console.log(data);\n                    console.log('删除成功！');\n                    $('#deleteModal').modal('hide');\n                    refreshNews('all');\n                }\n            });\n        }\n    });\n\n    //更新新闻\n    var updateID = null;\n    // 点击编辑按钮后弹出模拟框,获取数据库中已有新闻\n    $newsTable.on('click', '.btn-primary', function(event) { //用生成的类来判断一系列按钮，是否按下\n        $('#updateModal').modal('show');\n        updateID = $(this).parent().prevAll().eq(5).html();\n        console.log('updateID=' + updateID);\n        $.ajax({ //点击了编辑后，把从服务器取的值放入模拟框中以便修改\n            url: 'server/curnews.php',\n            type: 'POST',\n            dataType: 'json',\n            data: { newsid: updateID },\n            success: function(data) {\n                //console.log(data);\n                console.log('更新成功！');\n                $.each(data, function(index, val) {\n                    /* iterate through array or object */\n                    console.log('index=' + index);\n                    console.log('val=' + val.newsimg);\n\n                    $('#unewstitle').val(val.newstitle);\n                    $('#unewstype').val(val.newstype);\n                    $('#unewsimg').val(val.newsimg);\n                    $('#unewssrc').val(val.newssrc);\n                    // 取时间返回值的左边部分，以空格为分界\n                    $('#unewstime').val(val.newstime.split(' ')[0]);\n                });\n            }\n        });\n    });\n    // 在弹出的模拟框中，点击确认\n    $('#updateModal #confirmUpdate').click(function(event) {\n        console.log('update');\n       // console.log($('#newstitle').val());\n        $.ajax({\n            url: 'server/update.php',\n            type: 'POST',\n            dataType: 'json',\n            data: {\n            	newsid:updateID,\n                newstitle: $('#unewstitle').val(),\n                newstype: $('#unewstype').val(),\n                newsimg: $('#unewsimg').val(),\n                newstime: $('#unewstime').val(),\n                newssrc: $('#unewssrc').val()\n            },\n            success: function(data) {\n                console.log(data);\n                // 递交新闻成功后，刷新页面\n                $('#updateModal').modal('hide');\n                refreshNews($type);\n            }\n        });\n\n    });\n\n    var $type='all';\n\n    // 到./server/getnews.php后台调用数据\n    function refreshNews($type) {\n\n        //console.info($newsTable);\n        $newsTable.empty();\n        $.ajax({\n            url: 'server/getnews.php',\n            type: 'POST',\n            dataType: 'json',\n            data:{newstype:$type},\n            success: function(data) {\n                console.log(data);\n                $.each(data, function(index, val) { //index为键名或者序列号，val为值\n                    var $tdid = $('<td>').html(val.id);\n                    var $tdtype = $('<td>').html(val.newstype);\n                    var $tdtitle = $('<td>').html(val.newstitle);\n                    var $tdimg = $('<td>').html(val.newsimg);\n                    var $tdtime = $('<td>').html(val.newstime);\n                    var $tdsrc = $('<td>').html(val.newssrc);\n                    // console.log($tdsrc);\n                    // 组装修改及删除按钮\n                    var $tdctrl = $('<td>');\n                    // $元素必须带有<>否则出稀奇古怪错误，在button上就范了这个错误\n                    var $btnupdate = $('<button>').addClass('btn btn-primary btn-xs').html('编辑');\n                    var $btndelete = $('<button>').addClass('btn btn-danger btn-xs').html('删除');\n                    $tdctrl.append($btnupdate, $btndelete);\n                    //console.info($tdctrl);\n                    var $tRow = $('<tr>');\n                    $tRow.append($tdid, $tdtype, $tdtitle, $tdimg, $tdsrc, $tdtime, $tdctrl);\n                    $newsTable.append($tRow);\n                    // console.log(\"1\");  \n                    // console.log(val.newstype);\n                });\n            }\n        })\n    }\n    \n    //递交新闻后，清空输入框\n    function refreshInputNews(argument) {\n    	//console.log('val'+$('#newstitle').val());\n    	$('#newstitle').val('');\n    	$('#newstype').val('精选');\n    	$('#newsimg').val('');\n    	$('#newstime').val('');\n    	$('#newssrc').val('');\n    }\n\n});\n",
+			"file": "/D/xampp/htdocs/jmticket/js/admin.js",
+			"file_size": 8227,
+			"file_write_time": 131274167676934635,
+			"settings":
+			{
+				"buffer_size": 7293,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/MvcSeat20161229/lib/Model.php",
+			"settings":
+			{
+				"buffer_size": 9230,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: List Packages"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: bs3-badge"
+			],
+			[
+				"Package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"Package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ints",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 725.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/MvcSeat20161229",
+		"/D/xampp/htdocs/MvcSeat20161229/comm",
+		"/D/xampp/htdocs/jmticket",
+		"/D/xampp/htdocs/jmticket/css"
+	],
+	"file_history":
+	[
+		"/D/xampp/htdocs/jk_web/job7/jobcourse/js/lessonlist.js",
+		"/C/Users/ct/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/D/xampp/htdocs/jmticket/admin.html",
+		"/D/xampp/htdocs/jmticket/ticket.html",
+		"/D/xampp/htdocs/jmticket/css/demo_fontclass.html",
+		"/D/xampp/htdocs/jmticket/css/grid.css",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/index.html",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/admin.html",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/js/admin.js",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/css/baidunews.css",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/db.php",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/insert.php",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/delete.php",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/getnews.php",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/curnews.php",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/js/news.js",
+		"/D/xampp/htdocs/jk_web/job8/baidunews/server/update.php",
+		"/H/MvcSeat0405/update_ticket_sell.php",
+		"/H/MvcSeat0405/ticket_n7.php",
+		"/D/WWW/crm999_supermbb/6/lsxfcx.php",
+		"/D/WWW/crm999_supermbb/6/debug_file.php",
+		"/D/WWW/crm999_supermbb/6/changwu.php",
+		"/D/WWW/crm999_supermbb/6/drpscx.php",
+		"/D/WWW/crm999_supermbb/6/mypstj.php",
+		"/D/WWW/ghello/ghello/g0602.html",
+		"/D/WWW/ghello/ghello/response.php",
+		"/D/WWW/ghello/ghello/g0602c1.html",
+		"/D/WWW/ghello/ghello/g0602b.html",
+		"/D/WWW/ghello/ghello/g0603.html",
+		"/D/WWW/crm999_supermbb/2/index.php",
+		"/D/graphviz/cyq.dot",
+		"/D/xampp/htdocs/jk_web/job7/baiduswitch/css/init.css",
+		"/D/xampp/htdocs/jk_web/job7/baiduswitch/css/baiduswitch.css",
+		"/D/xampp/htdocs/jk_web/job7/baiduswitch/css/soutu.css",
+		"/D/xampp/htdocs/jk_web/job7/baiduswitch/baiduswich.html",
+		"/D/xampp/htdocs/jk_web/job7/baidunavdemo.html",
+		"/D/xampp/htdocs/jk_web/job7/img_baidudemo.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/lesson2.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/lesson12swith.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/lesson1.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/icon-more_cd68622.png",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/headerser.html",
+		"/D/xampp/htdocs/jk_web/job7/course/course.html",
+		"/D/xampp/htdocs/jk_web/job7/course/js/comm.js",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jquery_sample/hover_t.html",
+		"/D/xampp/htdocs/jk_web/job7/course/js/lessonlist.js",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/tl1.css",
+		"/D/xampp/htdocs/jk_web/job7/course/js/tmp.js",
+		"/D/xampp/htdocs/jk_web/job7/course/css/mybase_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/pagefoot.html",
+		"/D/xampp/htdocs/jk_web/job7/course/css/footer_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/header.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/lessonsort.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/hovertest.html",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/common_sync0_libs_1a4ebbf.js.下载",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo.html",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo2.html",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo0.html",
+		"/D/xampp/htdocs/jk_web/job7/course/css/course.css",
+		"/D/xampp/htdocs/jk_web/job7/course/css/course_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/pagenav.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/css/mybase_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/css/loading.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/aside_list0_ok.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/list_show.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/aside_list0a.html",
+		"/D/xampp/htdocs/jk_web/job7/course/css/header_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/course_1eb8ef6.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/aside_list.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/aside_list.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/aside_list1.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/css/tmpbase_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/css/tmp1base_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuanb/aside_list0.html",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/aside_list0.html",
+		"/D/xampp/htdocs/jk_web/job7/course/css/cleft.css",
+		"/D/xampp/htdocs/jk_web/job7/course/css/cleft_jk.css",
+		"/D/xampp/htdocs/jk_web/job7/codebase/jikexueyuan/tmp.css",
+		"/D/xampp/htdocs/jk_web/job7/course/img/header.css",
+		"/D/xampp/htdocs/jk_web/job7/course/img/cleft_a732d91.css",
+		"/D/WWW/crm999_supermbb/6/login_admin.php",
+		"/D/xampp/htdocs/jk_web/job7/course/img/heade-rwm.png",
+		"/D/xampp/htdocs/jk_web/job7/course/js/header.js",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/lessonlist_614ec49.js.下载",
+		"/D/xampp/htdocs/jk_web/job7/Javascript_Wallper/js/waterfall.js",
+		"/D/xampp/htdocs/jk_web/job7/Javascript_Wallper/index.html",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/common_sync1_libs_4637308.css",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/common_sync0_libs_4f30de2.css",
+		"/D/xampp/htdocs/jk_web/job7/imgBaidu.html",
+		"/D/xampp/htdocs/jk_web/job7/course/css/header.css",
+		"/D/xampp/htdocs/jk_web/job7/cursondemo/cursondemo_files/header_d41d8cd.css",
+		"/D/xampp/htdocs/jk_web/job7/css/mywaller.css",
+		"/D/xampp/htdocs/jk_web/job7/js/mywaller.js",
+		"/D/GitHub/锋利的jquery(第2版)源码/sharp_jquery2_demo/scripts/jquery.js",
+		"/D/xampp/htdocs/jk_web/job7/css/myBase.css",
+		"/D/GitHub/锋利的jquery(第2版)源码/sharp_jquery2_demo/Ch1/1-2(window.onload).html",
+		"/D/graphviz/Javascript_Wallper.dot",
+		"/D/graphviz/影城运营DIY.dot",
+		"/D/xampp/htdocs/jk_web/job7/js",
+		"/C/Users/ct/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/xampp/htdocs/job7/testcallback2.html",
+		"/D/xampp/htdocs/job6/my_hao123/changetelet1.html",
+		"/D/xampp/htdocs/job6/my_hao123/changeColorTest.html",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123/job6hao123.zip",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123/job6hao123.html",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123a.html",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123.html",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123/js/myhao123.js",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123/css/myhao123.css",
+		"/D/xampp/htdocs/job6/my_hao123/myhao123/myhao123a.html",
+		"/D/xampp/htdocs/job6/s_calculate/js/stand_cal.js",
+		"/D/xampp/htdocs/job6/my_hao123/t.css",
+		"/D/xampp/htdocs/job4/baidudemo_files/soutu_bff2306f.css",
+		"/D/xampp/htdocs/job6/hao123/hao123.html",
+		"/D/xampp/htdocs/job6/hao123/hao123_files/WouM__TJLn.css",
+		"/D/xampp/htdocs/job6/s_calculate/bootstrap/less/variables.less",
+		"/D/xampp/htdocs/job6/s_calculate/stand_cal.html",
+		"/D/xampp/htdocs/job6/s_calculate/css/stand_css.css",
+		"/D/xampp/htdocs/job4/job4jkxy3/jkxy.html",
+		"/D/xampp/htdocs/job6/navtest.html",
+		"/D/xampp/htdocs/job6/s_calculate/bootstrap/README.md",
+		"/D/xampp/htdocs/job6/s_calculate/js/calcu.js",
+		"/D/xampp/htdocs/job5/caculator/js/calcu.js",
+		"/D/xampp/htdocs/job5/caculator/js/stand_cal.js",
+		"/D/xampp/htdocs/job6/s_calculate/testkeydown.html",
+		"/D/xampp/htdocs/job6/s_calculate/css/calcu.css",
+		"/D/xampp/htdocs/job6/job5caculator4/caculator.html",
+		"/D/xampp/htdocs/job6/s_calculate/iconfont_2/demo.html"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"countticket201610",
+			"li",
+			"s_menu_mine",
+			"init_3a",
+			"更多产品",
+			"icon-m",
+			"回到顶部",
+			"mask",
+			"icon-m",
+			"回到",
+			"yellow",
+			"gr",
+			"green",
+			"light",
+			"搜索",
+			"设置",
+			"icon-m",
+			"跳",
+			"跳转",
+			"p-s",
+			"p-si",
+			"soutu",
+			"#form",
+			"clear",
+			"s_bdbri",
+			"#u_sp .s_bdbri",
+			"s-sp-menu",
+			"bdbri",
+			"s_bdbri",
+			"s_bri",
+			"menu-top",
+			"s-sp-menu",
+			"s-user-set-menu",
+			"我的vip",
+			"s-sp-menu",
+			"s-isindex-wrap",
+			"u_sp",
+			"#u_sp",
+			"s_upfunc_menus",
+			"s-down",
+			"s-top-wrap",
+			"s_top_wrap",
+			".s_top_wrap",
+			"s_top_wrap",
+			"s-manhattan-index",
+			" s-manhattan-index",
+			"mCon",
+			"script",
+			"animation",
+			"myfirst",
+			"@",
+			"ami",
+			"ani",
+			"scale",
+			"img",
+			"backgroud",
+			"ajax",
+			"lesson-list2",
+			"lesson-list",
+			"lesson-list2",
+			"lesson-infor",
+			"cookie",
+			"jd-line",
+			"ul",
+			"previewMode",
+			"icon",
+			"list-icon",
+			"list-",
+			"list",
+			"list-icon",
+			"kuai-icon",
+			"init()",
+			"bindEle",
+			"lessonOut",
+			"lessonHover",
+			"TweenMax.to",
+			"TweenMax",
+			"lessonicon-box",
+			"lesson-hover",
+			"lesson-infor",
+			"lessonHover",
+			"jd",
+			"jd-line",
+			"3140",
+			"fade",
+			"fad",
+			"fa",
+			"fad",
+			"jd",
+			"jd-",
+			"jd-line",
+			"a",
+			"lesson-list li",
+			"cancel-favorites",
+			"bindEle",
+			"hover",
+			"hover(",
+			"hover",
+			"lessonOut",
+			"lessonHover",
+			"li",
+			"font",
+			"fonz",
+			"sort",
+			".sort",
+			"。",
+			"href=\"",
+			"href=\"H",
+			"href=\"h",
+			"jk-log",
+			"jk-logo",
+			"jkinfor",
+			"footer .jkinfor",
+			"#footer .jkinfor",
+			"#footer .jkinfor dl dd a",
+			"cf",
+			"#page",
+			"page-num",
+			"page-nav",
+			"#page-nav",
+			"cf",
+			"lesson-infor .lessonicon-box",
+			"lesson-list .lesson-infor .lessonicon-box",
+			".lesson-infor .timeandicon .xinhao-icon3",
+			"after",
+			"cf:after",
+			"cf",
+			"lesson-list2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"css/",
+			"js/",
+			"css/",
+			"/css/",
+			"&gt;, ",
+			"&gt;",
+			"rabit-div",
+			"antiquewhite",
+			">",
+			"<p",
+			"</p>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/xampp/htdocs/jmticket/ticket.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4051,
+								4064
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4064,
+										4065
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.double_quote"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4050,
+										4051
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3000.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/xampp/htdocs/jmticket/js/ticket.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5774,
+								5774
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7380,
+										7381
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.curly"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										5770,
+										5771
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": true,
+							"open_with_edit": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/xampp/htdocs/jmticket/css/ticket.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										83,
+										84
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.curly"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										63,
+										64
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": false,
+							"open_with_edit": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/xampp/htdocs/MvcSeat20161229/ticket_n7.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16154,
+								16154
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										16239,
+										16240
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.curly"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										16153,
+										16154
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/xampp/htdocs/MvcSeat20161229/comm/one_hall.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 13093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/xampp/htdocs/jmticket/server/getfilmarrange.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1012,
+								1029
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1029,
+										1030
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.single_quote"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1011,
+										1012
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/xampp/htdocs/jmticket/js/admin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5628,
+								5628
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7013,
+										7014
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.curly"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										5562,
+										5563
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4025.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/xampp/htdocs/MvcSeat20161229/lib/Model.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								886
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										886,
+										887
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.double_quote"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										738,
+										739
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/1337 (SL).tmTheme",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
